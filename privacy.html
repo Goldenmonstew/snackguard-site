@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnackGuard - Privacy Policy / 隐私政策</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            line-height: 1.7;
+            color: #1d1d1f;
+            background: #f5f5f7;
+            padding: 0;
+        }
+        .header {
+            background: linear-gradient(135deg, #0a2e14 0%, #1a4a2e 100%);
+            color: #fff;
+            text-align: center;
+            padding: 48px 24px 40px;
+        }
+        .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+        .header p { font-size: 15px; opacity: 0.8; }
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .lang-switch a {
+            color: #fff;
+            text-decoration: none;
+            padding: 6px 16px;
+            border: 1px solid rgba(255,255,255,0.4);
+            border-radius: 20px;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        .lang-switch a:hover, .lang-switch a.active {
+            background: rgba(255,255,255,0.2);
+            border-color: #fff;
+        }
+        .container { max-width: 720px; margin: 0 auto; padding: 32px 24px 64px; }
+        .section { display: none; }
+        .section.active { display: block; }
+        .date { font-size: 14px; color: #86868b; margin-bottom: 32px; }
+        h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin: 32px 0 12px;
+            color: #1d1d1f;
+        }
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin: 24px 0 8px;
+            color: #1d1d1f;
+        }
+        p, li { font-size: 15px; color: #424245; margin-bottom: 8px; }
+        ul { padding-left: 20px; margin-bottom: 16px; }
+        li { margin-bottom: 4px; }
+        strong { color: #1d1d1f; }
+        .highlight {
+            background: #e8f5e9;
+            border-left: 3px solid #0DF259;
+            padding: 12px 16px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+        }
+        .no-collect { color: #d32f2f; }
+        .yes-collect { color: #2e7d32; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 13px;
+            color: #86868b;
+            border-top: 1px solid #d2d2d7;
+            margin-top: 48px;
+        }
+        .footer a { color: #06c; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>SnackGuard</h1>
+        <p>Privacy Policy / 隐私政策 / プライバシーポリシー</p>
+        <div class="lang-switch">
+            <a href="#" onclick="switchLang('zh')" id="btn-zh" class="active">中文</a>
+            <a href="#" onclick="switchLang('en')" id="btn-en">English</a>
+            <a href="#" onclick="switchLang('ja')" id="btn-ja">日本語</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Chinese -->
+        <div id="lang-zh" class="section active">
+            <p class="date">最后更新：2026年2月12日 | 生效日期：2026年2月12日</p>
+
+            <h2>1. 引言</h2>
+            <p>欢迎使用 SnackGuard（以下简称"本应用"）。我们非常重视您的隐私和个人信息保护。本隐私政策旨在帮助您了解我们如何收集、使用、存储和保护您的信息。</p>
+
+            <h2>2. 信息收集</h2>
+
+            <h3>2.1 我们收集的信息</h3>
+            <p><strong>本地存储的数据：</strong></p>
+            <ul>
+                <li><strong>零食记录：</strong>您记录的吃零食时间戳、描述、反思内容</li>
+                <li><strong>成就数据：</strong>您解锁的成就、连续天数、抵抗次数等统计信息</li>
+                <li><strong>应用设置：</strong>您的偏好设置，如语言选择、动画开关、每日零食额度</li>
+            </ul>
+
+            <p><strong>位置信息（可选）：</strong></p>
+            <ul>
+                <li>仅在您授权的情况下，使用粗略位置数据判断您是否在餐饮场所附近</li>
+                <li>仅用于本地智能检测功能，<strong>不会上传到任何服务器</strong></li>
+            </ul>
+
+            <p><strong>运动传感器数据（可选）：</strong></p>
+            <ul>
+                <li>设备运动数据用于辅助判断进食行为</li>
+                <li>所有处理均在设备本地完成</li>
+            </ul>
+
+            <p><strong>健康数据（Apple Watch）：</strong></p>
+            <ul>
+                <li>心率数据用于辅助检测进食行为</li>
+                <li>仅在 Apple Watch 上使用，<strong>不会同步到我们的服务器</strong></li>
+                <li>所有健康数据处理均在设备本地完成</li>
+            </ul>
+
+            <h3>2.2 我们不收集的信息</h3>
+            <ul>
+                <li class="no-collect">&#10006; 不收集您的姓名、电话号码、电子邮件</li>
+                <li class="no-collect">&#10006; 不收集设备唯一标识符（IDFA/IDFV）</li>
+                <li class="no-collect">&#10006; 不追踪您的浏览行为</li>
+                <li class="no-collect">&#10006; 不使用第三方广告或分析 SDK</li>
+                <li class="no-collect">&#10006; 不将您的任何数据上传到我们的服务器</li>
+            </ul>
+
+            <h2>3. 信息使用</h2>
+            <p>我们仅将收集的信息用于以下目的：</p>
+            <ul>
+                <li><strong>核心功能：</strong>记录零食、展示统计、解锁成就</li>
+                <li><strong>智能检测：</strong>基于时间、位置、设备状态提供智能提醒</li>
+                <li><strong>数据同步：</strong>通过 iCloud 在您的设备间同步数据（需要您主动开启）</li>
+            </ul>
+
+            <h2>4. 信息存储</h2>
+            <h3>4.1 本地存储</h3>
+            <ul>
+                <li>所有数据首先存储在您的设备本地</li>
+                <li>使用 iOS 标准加密机制保护数据</li>
+            </ul>
+            <h3>4.2 iCloud 同步（可选）</h3>
+            <ul>
+                <li>如果您启用了 iCloud 同步，数据将通过 Apple 的 iCloud Key-Value Store 服务同步</li>
+                <li>我们无法访问您存储在 iCloud 中的数据</li>
+                <li>同步过程由 Apple 的标准 iCloud 安全机制保护（传输与存储加密）</li>
+            </ul>
+
+            <h2>5. 信息分享</h2>
+            <div class="highlight">
+                <strong>我们绝不会将您的个人信息分享、出售或出租给任何第三方。</strong>
+            </div>
+            <p>唯一例外是法律要求：遵守法律程序、法院命令或政府要求；保护本应用、我们的用户或公众的权利、财产或安全。</p>
+
+            <h2>6. 数据安全</h2>
+            <ul>
+                <li>使用 iOS 系统级加密</li>
+                <li>不传输数据到外部服务器</li>
+                <li>iCloud 同步由 Apple 的标准安全机制保护</li>
+                <li>定期更新应用以修复安全漏洞</li>
+            </ul>
+
+            <h2>7. 您的权利</h2>
+            <ul>
+                <li><strong>访问权：</strong>所有数据均可在应用内查看</li>
+                <li><strong>删除权：</strong>您可以随时删除单条记录或清空所有数据</li>
+                <li><strong>导出权：</strong>数据存储在您的 iCloud 账户中，您可以随时导出</li>
+                <li><strong>撤销权限：</strong>您可以在 iOS 设置中随时撤销位置、运动、健康数据权限</li>
+            </ul>
+
+            <h2>8. 儿童隐私</h2>
+            <p>本应用适合所有年龄段使用（4+），不会有意收集 13 岁以下儿童的个人信息。</p>
+
+            <h2>9. 第三方服务</h2>
+            <p>本应用<strong>不使用任何第三方分析、广告或追踪服务</strong>。</p>
+            <p>唯一使用的 Apple 服务：</p>
+            <ul>
+                <li class="yes-collect">&#10004; iCloud Key-Value Store - 用于设备间数据同步</li>
+                <li class="yes-collect">&#10004; HealthKit（仅 Apple Watch）- 读取心率数据</li>
+            </ul>
+
+            <h2>10. 隐私政策变更</h2>
+            <p>我们可能会不时更新本隐私政策。重大变更时，我们会在应用内通知您。</p>
+
+            <h2>11. 联系我们</h2>
+            <p>如果您对本隐私政策有任何疑问，请通过以下方式联系：</p>
+            <ul>
+                <li>Email: <a href="mailto:douglaswan.dev@gmail.com">douglaswan.dev@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/Goldenmonstew/SnackGuard">github.com/Goldenmonstew/SnackGuard</a></li>
+            </ul>
+        </div>
+
+        <!-- English -->
+        <div id="lang-en" class="section">
+            <p class="date">Last Updated: February 12, 2026 | Effective Date: February 12, 2026</p>
+
+            <h2>1. Introduction</h2>
+            <p>Welcome to SnackGuard (the "App"). We take your privacy and personal information protection very seriously. This Privacy Policy explains how we collect, use, store, and protect your information.</p>
+
+            <h2>2. Information Collection</h2>
+
+            <h3>2.1 Information We Collect</h3>
+            <p><strong>Locally Stored Data:</strong></p>
+            <ul>
+                <li><strong>Snack Records:</strong> Timestamps, descriptions, and reflections of your snack logs</li>
+                <li><strong>Achievement Data:</strong> Unlocked achievements, streak days, resist count, and other statistics</li>
+                <li><strong>App Settings:</strong> Your preferences such as language, animation settings, daily snack limit</li>
+            </ul>
+
+            <p><strong>Location Information (Optional):</strong></p>
+            <ul>
+                <li>Only with your authorization, uses coarse location data to detect if you're near food establishments</li>
+                <li>Used only for local smart detection, <strong>never uploaded to any server</strong></li>
+            </ul>
+
+            <p><strong>Motion Sensor Data (Optional):</strong></p>
+            <ul>
+                <li>Device motion data helps detect eating behavior</li>
+                <li>All processing happens locally on your device</li>
+            </ul>
+
+            <p><strong>Health Data (Apple Watch):</strong></p>
+            <ul>
+                <li>Heart rate data helps detect eating behavior</li>
+                <li>Only used on Apple Watch, <strong>never synced to our servers</strong></li>
+                <li>All health data processing happens locally on your device</li>
+            </ul>
+
+            <h3>2.2 Information We Do NOT Collect</h3>
+            <ul>
+                <li class="no-collect">&#10006; We do NOT collect your name, phone number, or email</li>
+                <li class="no-collect">&#10006; We do NOT collect device unique identifiers (IDFA/IDFV)</li>
+                <li class="no-collect">&#10006; We do NOT track your browsing behavior</li>
+                <li class="no-collect">&#10006; We do NOT use third-party advertising or analytics SDKs</li>
+                <li class="no-collect">&#10006; We do NOT upload any of your data to our servers</li>
+            </ul>
+
+            <h2>3. How We Use Information</h2>
+            <ul>
+                <li><strong>Core Functions:</strong> Record snacks, display statistics, unlock achievements</li>
+                <li><strong>Smart Detection:</strong> Provide intelligent reminders based on time, location, device state</li>
+                <li><strong>Data Sync:</strong> Sync data across your devices via iCloud (requires your opt-in)</li>
+            </ul>
+
+            <h2>4. Information Storage</h2>
+            <h3>4.1 Local Storage</h3>
+            <ul>
+                <li>All data is first stored locally on your device</li>
+                <li>Protected by iOS standard encryption mechanisms</li>
+            </ul>
+            <h3>4.2 iCloud Sync (Optional)</h3>
+            <ul>
+                <li>If you enable iCloud sync, data will be synced via Apple's iCloud Key-Value Store service</li>
+                <li>We cannot access data stored in your iCloud</li>
+                <li>Sync is protected by Apple's standard iCloud security (encryption in transit and at rest)</li>
+            </ul>
+
+            <h2>5. Information Sharing</h2>
+            <div class="highlight">
+                <strong>We will NEVER share, sell, or rent your personal information to any third party.</strong>
+            </div>
+            <p>Only exception is legal requirements: to comply with legal process, court orders, or government requests; to protect the rights, property, or safety of the App, our users, or the public.</p>
+
+            <h2>6. Data Security</h2>
+            <ul>
+                <li>Use iOS system-level encryption</li>
+                <li>Do not transmit data to external servers</li>
+                <li>iCloud sync is protected by Apple's standard security mechanisms</li>
+                <li>Regularly update the app to fix security vulnerabilities</li>
+            </ul>
+
+            <h2>7. Your Rights</h2>
+            <ul>
+                <li><strong>Access:</strong> All data is viewable within the app</li>
+                <li><strong>Deletion:</strong> You can delete individual records or clear all data anytime</li>
+                <li><strong>Export:</strong> Data is stored in your iCloud account and can be exported anytime</li>
+                <li><strong>Revocation:</strong> You can revoke location, motion, and health data permissions in iOS Settings anytime</li>
+            </ul>
+
+            <h2>8. Children's Privacy</h2>
+            <p>This app is suitable for all ages (4+) and does not knowingly collect personal information from children under 13.</p>
+
+            <h2>9. Third-Party Services</h2>
+            <p>This app <strong>does NOT use any third-party analytics, advertising, or tracking services</strong>.</p>
+            <p>Only Apple services used:</p>
+            <ul>
+                <li class="yes-collect">&#10004; iCloud Key-Value Store - For cross-device data sync</li>
+                <li class="yes-collect">&#10004; HealthKit (Apple Watch only) - To read heart rate data</li>
+            </ul>
+
+            <h2>10. Privacy Policy Changes</h2>
+            <p>We may update this Privacy Policy from time to time. For significant changes, we will notify you within the app.</p>
+
+            <h2>11. Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy:</p>
+            <ul>
+                <li>Email: <a href="mailto:douglaswan.dev@gmail.com">douglaswan.dev@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/Goldenmonstew/SnackGuard">github.com/Goldenmonstew/SnackGuard</a></li>
+            </ul>
+        </div>
+
+        <!-- Japanese -->
+        <div id="lang-ja" class="section">
+            <p class="date">最終更新：2026年2月12日 | 発効日：2026年2月12日</p>
+
+            <h2>1. はじめに</h2>
+            <p>SnackGuard（以下「本アプリ」）をご利用いただきありがとうございます。当社はお客様のプライバシーと個人情報の保護を非常に重視しています。本プライバシーポリシーは、当社がお客様の情報をどのように収集、使用、保存、保護するかを説明するものです。</p>
+
+            <h2>2. 情報の収集</h2>
+
+            <h3>2.1 収集する情報</h3>
+            <p><strong>ローカルに保存されるデータ：</strong></p>
+            <ul>
+                <li><strong>スナック記録：</strong>記録されたスナックのタイムスタンプ、説明、振り返り内容</li>
+                <li><strong>実績データ：</strong>解除された実績、連続日数、我慢回数などの統計情報</li>
+                <li><strong>アプリ設定：</strong>言語選択、アニメーション設定、1日のスナック制限などの設定</li>
+            </ul>
+
+            <p><strong>位置情報（オプション）：</strong></p>
+            <ul>
+                <li>許可された場合のみ、飲食店付近にいるかを判断するための大まかな位置データを使用</li>
+                <li>ローカルのスマート検出機能にのみ使用され、<strong>サーバーにアップロードされることはありません</strong></li>
+            </ul>
+
+            <p><strong>モーションセンサーデータ（オプション）：</strong></p>
+            <ul>
+                <li>食事行動の検出を補助するためにデバイスのモーションデータを使用</li>
+                <li>すべての処理はデバイス内でローカルに完了</li>
+            </ul>
+
+            <p><strong>健康データ（Apple Watch）：</strong></p>
+            <ul>
+                <li>心拍数データは食事行動の検出を補助するために使用</li>
+                <li>Apple Watch上でのみ使用され、<strong>当社のサーバーに同期されることはありません</strong></li>
+                <li>すべての健康データ処理はデバイス内でローカルに完了</li>
+            </ul>
+
+            <h3>2.2 収集しない情報</h3>
+            <ul>
+                <li class="no-collect">&#10006; お名前、電話番号、メールアドレスは収集しません</li>
+                <li class="no-collect">&#10006; デバイス固有識別子（IDFA/IDFV）は収集しません</li>
+                <li class="no-collect">&#10006; 閲覧行動は追跡しません</li>
+                <li class="no-collect">&#10006; サードパーティの広告や分析SDKは使用しません</li>
+                <li class="no-collect">&#10006; お客様のデータを当社のサーバーにアップロードすることはありません</li>
+            </ul>
+
+            <h2>3. 情報の使用</h2>
+            <ul>
+                <li><strong>コア機能：</strong>スナックの記録、統計の表示、実績の解除</li>
+                <li><strong>スマート検出：</strong>時間、位置、デバイス状態に基づいたスマートリマインダーの提供</li>
+                <li><strong>データ同期：</strong>iCloud経由でデバイス間のデータ同期（オプトイン必須）</li>
+            </ul>
+
+            <h2>4. 情報の保存</h2>
+            <h3>4.1 ローカルストレージ</h3>
+            <ul>
+                <li>すべてのデータはまずデバイスにローカル保存されます</li>
+                <li>iOS標準の暗号化メカニズムでデータを保護</li>
+            </ul>
+            <h3>4.2 iCloud同期（オプション）</h3>
+            <ul>
+                <li>iCloud同期を有効にすると、AppleのiCloud Key-Value Storeサービスでデータが同期されます</li>
+                <li>当社はiCloudに保存されたデータにアクセスできません</li>
+                <li>同期はAppleの標準iCloudセキュリティで保護されています</li>
+            </ul>
+
+            <h2>5. 情報の共有</h2>
+            <div class="highlight">
+                <strong>当社はお客様の個人情報を第三者と共有、販売、貸与することは一切ありません。</strong>
+            </div>
+            <p>唯一の例外は法的要件です。</p>
+
+            <h2>6. データセキュリティ</h2>
+            <ul>
+                <li>iOSシステムレベルの暗号化を使用</li>
+                <li>外部サーバーへのデータ送信なし</li>
+                <li>iCloud同期はAppleの標準セキュリティで保護</li>
+                <li>セキュリティ脆弱性の修正のため定期的にアプリを更新</li>
+            </ul>
+
+            <h2>7. お客様の権利</h2>
+            <ul>
+                <li><strong>アクセス権：</strong>すべてのデータはアプリ内で閲覧可能</li>
+                <li><strong>削除権：</strong>個別の記録の削除やすべてのデータの消去がいつでも可能</li>
+                <li><strong>エクスポート権：</strong>データはiCloudアカウントに保存され、いつでもエクスポート可能</li>
+                <li><strong>権限の取り消し：</strong>iOS設定でいつでも位置情報、モーション、健康データの権限を取り消し可能</li>
+            </ul>
+
+            <h2>8. 子供のプライバシー</h2>
+            <p>本アプリは全年齢対象（4+）であり、13歳未満の子供の個人情報を故意に収集することはありません。</p>
+
+            <h2>9. サードパーティサービス</h2>
+            <p>本アプリは<strong>サードパーティの分析、広告、追跡サービスを一切使用しません</strong>。</p>
+            <p>使用しているAppleサービス：</p>
+            <ul>
+                <li class="yes-collect">&#10004; iCloud Key-Value Store - デバイス間データ同期用</li>
+                <li class="yes-collect">&#10004; HealthKit（Apple Watchのみ）- 心拍数データの読み取り</li>
+            </ul>
+
+            <h2>10. プライバシーポリシーの変更</h2>
+            <p>本プライバシーポリシーは随時更新される場合があります。重要な変更がある場合は、アプリ内でお知らせします。</p>
+
+            <h2>11. お問い合わせ</h2>
+            <p>本プライバシーポリシーに関するご質問がございましたら：</p>
+            <ul>
+                <li>Email: <a href="mailto:douglaswan.dev@gmail.com">douglaswan.dev@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/Goldenmonstew/SnackGuard">github.com/Goldenmonstew/SnackGuard</a></li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 SnackGuard. All rights reserved.</p>
+            <p><a href="mailto:douglaswan.dev@gmail.com">douglaswan.dev@gmail.com</a></p>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.lang-switch a').forEach(a => a.classList.remove('active'));
+            document.getElementById('lang-' + lang).classList.add('active');
+            document.getElementById('btn-' + lang).classList.add('active');
+        }
+    </script>
+</body>
+</html>
