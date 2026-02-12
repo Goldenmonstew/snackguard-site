@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnackGuard - Terms of Use / 使用条款</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            line-height: 1.7;
+            color: #1d1d1f;
+            background: #f5f5f7;
+            padding: 0;
+        }
+        .header {
+            background: linear-gradient(135deg, #0a2e14 0%, #1a4a2e 100%);
+            color: #fff;
+            text-align: center;
+            padding: 48px 24px 40px;
+        }
+        .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+        .header p { font-size: 15px; opacity: 0.8; }
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .lang-switch a {
+            color: #fff;
+            text-decoration: none;
+            padding: 6px 16px;
+            border: 1px solid rgba(255,255,255,0.4);
+            border-radius: 20px;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        .lang-switch a:hover, .lang-switch a.active {
+            background: rgba(255,255,255,0.2);
+            border-color: #fff;
+        }
+        .container { max-width: 720px; margin: 0 auto; padding: 32px 24px 64px; }
+        .section { display: none; }
+        .section.active { display: block; }
+        .date { font-size: 14px; color: #86868b; margin-bottom: 32px; }
+        h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin: 32px 0 12px;
+            color: #1d1d1f;
+        }
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin: 24px 0 8px;
+            color: #1d1d1f;
+        }
+        p, li { font-size: 15px; color: #424245; margin-bottom: 8px; }
+        ul { padding-left: 20px; margin-bottom: 16px; }
+        li { margin-bottom: 4px; }
+        strong { color: #1d1d1f; }
+        .highlight {
+            background: #e8f5e9;
+            border-left: 3px solid #0DF259;
+            padding: 12px 16px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+        }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 13px;
+            color: #86868b;
+            border-top: 1px solid #d2d2d7;
+            margin-top: 48px;
+        }
+        .footer a { color: #06c; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>SnackGuard</h1>
+        <p>Terms of Use / 使用条款 / 利用規約</p>
+        <div class="lang-switch">
+            <a href="#" onclick="switchLang('zh')" id="btn-zh" class="active">中文</a>
+            <a href="#" onclick="switchLang('en')" id="btn-en">EN</a>
+            <a href="#" onclick="switchLang('ja')" id="btn-ja">日本語</a>
+            <a href="#" onclick="switchLang('ko')" id="btn-ko">한국어</a>
+            <a href="#" onclick="switchLang('fr')" id="btn-fr">FR</a>
+            <a href="#" onclick="switchLang('de')" id="btn-de">DE</a>
+            <a href="#" onclick="switchLang('es')" id="btn-es">ES</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Chinese -->
+        <div class="section active" id="lang-zh">
+            <p class="date">最后更新：2026年2月12日</p>
+
+            <h2>1. 接受条款</h2>
+            <p>欢迎使用 SnackGuard（以下简称"本应用"）。下载、安装或使用本应用即表示您同意受本使用条款的约束。如果您不同意这些条款，请勿使用本应用。</p>
+
+            <h2>2. 服务描述</h2>
+            <p>SnackGuard 是一款智能零食监控应用，旨在帮助用户建立健康的饮食习惯。本应用提供以下功能：</p>
+            <ul>
+                <li>基于多信号融合的智能零食行为检测</li>
+                <li>零食记录与统计分析</li>
+                <li>成就系统与激励机制</li>
+                <li>Apple Watch 协同检测</li>
+                <li>iCloud 跨设备数据同步</li>
+                <li>主屏幕小组件</li>
+            </ul>
+
+            <h2>3. 使用许可</h2>
+            <p>我们授予您有限的、非排他性的、不可转让的、可撤销的许可，用于在您拥有或控制的 Apple 设备上使用本应用，仅供个人、非商业用途。</p>
+
+            <h2>4. 用户责任</h2>
+            <p>使用本应用时，您同意：</p>
+            <ul>
+                <li>仅用于合法目的</li>
+                <li>不对应用进行反向工程、反编译或反汇编</li>
+                <li>不复制、修改或分发应用的任何部分</li>
+                <li>不将应用用于任何商业用途</li>
+            </ul>
+
+            <h2>5. 健康声明</h2>
+            <div class="highlight">
+                <p><strong>重要提示：</strong>SnackGuard 不是医疗设备，不提供医疗建议。本应用仅作为辅助工具帮助您管理零食习惯。如有健康问题，请咨询专业医疗人员。本应用不用于诊断、治疗、治愈或预防任何疾病。</p>
+            </div>
+
+            <h2>6. 数据与隐私</h2>
+            <p>您的数据处理受我们的<a href="privacy.html">隐私政策</a>约束。概要：</p>
+            <ul>
+                <li>所有数据存储在您的设备本地</li>
+                <li>iCloud 同步由 Apple 标准安全机制保护</li>
+                <li>我们不收集、存储或传输您的个人数据到我们的服务器</li>
+            </ul>
+
+            <h2>7. 知识产权</h2>
+            <p>本应用及其所有内容（包括但不限于代码、设计、图标、文本、图形）均为开发者的知识产权，受著作权法和国际条约保护。</p>
+
+            <h2>8. 免责声明</h2>
+            <p>本应用按"现状"和"可用"基础提供，不提供任何明示或暗示的保证，包括但不限于：</p>
+            <ul>
+                <li>适销性保证</li>
+                <li>特定用途适用性保证</li>
+                <li>不侵权保证</li>
+                <li>检测准确性保证</li>
+            </ul>
+            <p>我们不保证应用的运行不会中断或无错误，也不保证检测结果的绝对准确性。</p>
+
+            <h2>9. 责任限制</h2>
+            <p>在法律允许的最大范围内，开发者不对因使用或无法使用本应用而产生的任何间接、附带、特殊、后果性或惩罚性损害承担责任，无论其是否可预见。</p>
+
+            <h2>10. 条款变更</h2>
+            <p>我们可能会不时更新本使用条款。重大变更时，我们会在应用内通知您。继续使用本应用即表示您接受修改后的条款。</p>
+
+            <h2>11. 适用法律</h2>
+            <p>本条款受中华人民共和国法律管辖，并按其解释。</p>
+
+            <h2>12. 联系我们</h2>
+            <p>如果您对本使用条款有任何疑问，请联系：</p>
+            <ul>
+                <li>Email: <a href="mailto:douglaswan.dev@gmail.com">douglaswan.dev@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/Goldenmonstew/snackguard-site">github.com/Goldenmonstew/snackguard-site</a></li>
+            </ul>
+        </div>
+
+        <!-- English -->
+        <div class="section" id="lang-en">
+            <p class="date">Last Updated: February 12, 2026</p>
+
+            <h2>1. Acceptance of Terms</h2>
+            <p>Welcome to SnackGuard (the "App"). By downloading, installing, or using this App, you agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use the App.</p>
+
+            <h2>2. Service Description</h2>
+            <p>SnackGuard is an intelligent snack monitoring app designed to help users build healthier eating habits. The App provides the following features:</p>
+            <ul>
+                <li>Multi-signal fusion smart snack behavior detection</li>
+                <li>Snack logging and statistical analysis</li>
+                <li>Achievement system and motivational mechanics</li>
+                <li>Apple Watch collaborative detection</li>
+                <li>iCloud cross-device data sync</li>
+                <li>Home Screen widgets</li>
+            </ul>
+
+            <h2>3. License</h2>
+            <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use the App on Apple devices you own or control, solely for personal, non-commercial purposes.</p>
+
+            <h2>4. User Responsibilities</h2>
+            <p>When using the App, you agree to:</p>
+            <ul>
+                <li>Use it only for lawful purposes</li>
+                <li>Not reverse engineer, decompile, or disassemble the App</li>
+                <li>Not copy, modify, or distribute any part of the App</li>
+                <li>Not use the App for any commercial purpose</li>
+            </ul>
+
+            <h2>5. Health Disclaimer</h2>
+            <div class="highlight">
+                <p><strong>Important:</strong> SnackGuard is not a medical device and does not provide medical advice. The App is intended only as a supplementary tool to help you manage snacking habits. For health concerns, please consult a qualified healthcare professional. The App is not intended to diagnose, treat, cure, or prevent any disease.</p>
+            </div>
+
+            <h2>6. Data &amp; Privacy</h2>
+            <p>Your data handling is governed by our <a href="privacy.html">Privacy Policy</a>. In summary:</p>
+            <ul>
+                <li>All data is stored locally on your device</li>
+                <li>iCloud sync is protected by Apple's standard security mechanisms</li>
+                <li>We do not collect, store, or transmit your personal data to our servers</li>
+            </ul>
+
+            <h2>7. Intellectual Property</h2>
+            <p>The App and all its content (including but not limited to code, design, icons, text, and graphics) are the intellectual property of the developer, protected by copyright law and international treaties.</p>
+
+            <h2>8. Disclaimer of Warranties</h2>
+            <p>The App is provided on an "AS IS" and "AS AVAILABLE" basis, without warranties of any kind, either express or implied, including but not limited to:</p>
+            <ul>
+                <li>Merchantability</li>
+                <li>Fitness for a particular purpose</li>
+                <li>Non-infringement</li>
+                <li>Detection accuracy</li>
+            </ul>
+            <p>We do not warrant that the App will operate uninterrupted or error-free, nor do we guarantee the absolute accuracy of detection results.</p>
+
+            <h2>9. Limitation of Liability</h2>
+            <p>To the maximum extent permitted by law, the developer shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from the use of or inability to use the App, whether or not foreseeable.</p>
+
+            <h2>10. Changes to Terms</h2>
+            <p>We may update these Terms of Use from time to time. For significant changes, we will notify you within the App. Continued use of the App constitutes acceptance of the modified terms.</p>
+
+            <h2>11. Governing Law</h2>
+            <p>These terms shall be governed by and construed in accordance with the laws of the People's Republic of China.</p>
+
+            <h2>12. Contact Us</h2>
+            <p>If you have any questions about these Terms of Use, please contact:</p>
+            <ul>
+                <li>Email: <a href="mailto:douglaswan.dev@gmail.com">douglaswan.dev@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/Goldenmonstew/snackguard-site">github.com/Goldenmonstew/snackguard-site</a></li>
+            </ul>
+        </div>
+
+        <!-- Japanese -->
+        <div class="section" id="lang-ja">
+            <p class="date">最終更新日：2026年2月12日</p>
+
+            <h2>1. 利用規約への同意</h2>
+            <p>SnackGuard（以下「本アプリ」）をご利用いただきありがとうございます。本アプリをダウンロード、インストール、または使用することにより、本利用規約に拘束されることに同意したものとみなされます。これらの規約に同意されない場合は、本アプリをご使用にならないでください。</p>
+
+            <h2>2. サービスの説明</h2>
+            <p>SnackGuardは、ユーザーが健康的な食習慣を築くことを支援するスマートおやつ監視アプリです。以下の機能を提供します：</p>
+            <ul>
+                <li>マルチシグナル融合によるスマート間食行動検出</li>
+                <li>スナック記録と統計分析</li>
+                <li>実績システムとモチベーション機能</li>
+                <li>Apple Watch連携検出</li>
+                <li>iCloudクロスデバイスデータ同期</li>
+                <li>ホーム画面ウィジェット</li>
+            </ul>
+
+            <h2>3. ライセンス</h2>
+            <p>当社は、お客様が所有または管理するAppleデバイスにおいて、個人的かつ非商業的な目的でのみ本アプリを使用する、限定的、非独占的、譲渡不可、取消可能なライセンスを付与します。</p>
+
+            <h2>4. ユーザーの責任</h2>
+            <p>本アプリの使用にあたり、以下に同意するものとします：</p>
+            <ul>
+                <li>合法的な目的にのみ使用すること</li>
+                <li>アプリのリバースエンジニアリング、逆コンパイル、逆アセンブルを行わないこと</li>
+                <li>アプリの一部を複製、変更、配布しないこと</li>
+                <li>商業目的で使用しないこと</li>
+            </ul>
+
+            <h2>5. 健康に関する免責事項</h2>
+            <div class="highlight">
+                <p><strong>重要：</strong>SnackGuardは医療機器ではなく、医療アドバイスを提供するものではありません。本アプリは間食習慣の管理を補助するツールとしてのみ使用されることを意図しています。健康上の懸念がある場合は、資格のある医療専門家にご相談ください。本アプリは、いかなる疾病の診断、治療、治癒、予防を目的としたものではありません。</p>
+            </div>
+
+            <h2>6. データとプライバシー</h2>
+            <p>お客様のデータの取り扱いは、当社の<a href="privacy.html">プライバシーポリシー</a>に準拠します。概要：</p>
+            <ul>
+                <li>すべてのデータはデバイス内にローカル保存されます</li>
+                <li>iCloud同期はAppleの標準セキュリティ機構で保護されます</li>
+                <li>当社はお客様の個人データを当社のサーバーに収集、保存、送信しません</li>
+            </ul>
+
+            <h2>7. 知的財産権</h2>
+            <p>本アプリおよびそのすべてのコンテンツ（コード、デザイン、アイコン、テキスト、グラフィックスを含むがこれらに限定されない）は開発者の知的財産であり、著作権法および国際条約により保護されています。</p>
+
+            <h2>8. 保証の免責</h2>
+            <p>本アプリは「現状のまま」および「利用可能な状態で」提供され、以下を含むいかなる明示的または黙示的な保証も行いません：</p>
+            <ul>
+                <li>商品性の保証</li>
+                <li>特定目的への適合性の保証</li>
+                <li>非侵害の保証</li>
+                <li>検出精度の保証</li>
+            </ul>
+
+            <h2>9. 責任の制限</h2>
+            <p>法律で許される最大限の範囲において、開発者は、本アプリの使用または使用不能から生じるいかなる間接的、偶発的、特別、結果的、または懲罰的損害についても責任を負いません。</p>
+
+            <h2>10. 規約の変更</h2>
+            <p>当社は、本利用規約を随時更新する場合があります。重要な変更がある場合は、アプリ内でお知らせします。</p>
+
+            <h2>11. 準拠法</h2>
+            <p>本規約は中華人民共和国の法律に準拠し、それに従って解釈されるものとします。</p>
+
+            <h2>12. お問い合わせ</h2>
+            <p>本利用規約に関するご質問は、以下までお問い合わせください：</p>
+            <ul>
+                <li>Email: <a href="mailto:douglaswan.dev@gmail.com">douglaswan.dev@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/Goldenmonstew/snackguard-site">github.com/Goldenmonstew/snackguard-site</a></li>
+            </ul>
+        </div>
+
+        <!-- Korean -->
+        <div class="section" id="lang-ko">
+            <p class="date">최종 업데이트: 2026년 2월 12일</p>
+
+            <h2>1. 이용약관 동의</h2>
+            <p>SnackGuard(이하 "본 앱")를 이용해 주셔서 감사합니다. 본 앱을 다운로드, 설치 또는 사용함으로써 본 이용약관에 동의하는 것으로 간주됩니다. 이 약관에 동의하지 않으시면 본 앱을 사용하지 마십시오.</p>
+
+            <h2>2. 서비스 설명</h2>
+            <p>SnackGuard는 사용자가 건강한 식습관을 만들 수 있도록 돕는 스마트 간식 모니터링 앱입니다. 다음 기능을 제공합니다:</p>
+            <ul>
+                <li>멀티 시그널 융합 스마트 간식 행동 감지</li>
+                <li>간식 기록 및 통계 분석</li>
+                <li>업적 시스템 및 동기 부여 기능</li>
+                <li>Apple Watch 협업 감지</li>
+                <li>iCloud 기기 간 데이터 동기화</li>
+                <li>홈 화면 위젯</li>
+            </ul>
+
+            <h2>3. 라이선스</h2>
+            <p>당사는 귀하가 소유하거나 관리하는 Apple 기기에서 개인적, 비상업적 목적으로만 본 앱을 사용할 수 있는 제한적, 비독점적, 양도 불가, 취소 가능한 라이선스를 부여합니다.</p>
+
+            <h2>4. 사용자 책임</h2>
+            <p>본 앱 사용 시 다음에 동의합니다:</p>
+            <ul>
+                <li>합법적인 목적으로만 사용</li>
+                <li>앱의 리버스 엔지니어링, 디컴파일 또는 디스어셈블 금지</li>
+                <li>앱의 일부를 복사, 수정 또는 배포 금지</li>
+                <li>상업적 목적으로 사용 금지</li>
+            </ul>
+
+            <h2>5. 건강 면책 조항</h2>
+            <div class="highlight">
+                <p><strong>중요:</strong> SnackGuard는 의료 기기가 아니며 의료 조언을 제공하지 않습니다. 본 앱은 간식 습관 관리를 돕기 위한 보조 도구로만 사용됩니다. 건강 관련 우려 사항이 있으시면 자격을 갖춘 의료 전문가에게 상담하십시오. 본 앱은 질병의 진단, 치료, 완치 또는 예방을 목적으로 하지 않습니다.</p>
+            </div>
+
+            <h2>6. 데이터 및 개인정보</h2>
+            <p>귀하의 데이터 처리는 당사의 <a href="privacy.html">개인정보 처리방침</a>에 따릅니다. 요약:</p>
+            <ul>
+                <li>모든 데이터는 귀하의 기기에 로컬 저장됩니다</li>
+                <li>iCloud 동기화는 Apple의 표준 보안 메커니즘으로 보호됩니다</li>
+                <li>당사는 귀하의 개인 데이터를 당사 서버에 수집, 저장 또는 전송하지 않습니다</li>
+            </ul>
+
+            <h2>7. 지적 재산권</h2>
+            <p>본 앱 및 모든 콘텐츠(코드, 디자인, 아이콘, 텍스트, 그래픽 포함)는 개발자의 지적 재산이며, 저작권법 및 국제 조약에 의해 보호됩니다.</p>
+
+            <h2>8. 보증 부인</h2>
+            <p>본 앱은 "있는 그대로" 및 "이용 가능한 상태로" 제공되며, 다음을 포함한 어떠한 명시적 또는 묵시적 보증도 하지 않습니다:</p>
+            <ul>
+                <li>상품성 보증</li>
+                <li>특정 목적 적합성 보증</li>
+                <li>비침해 보증</li>
+                <li>감지 정확성 보증</li>
+            </ul>
+
+            <h2>9. 책임 제한</h2>
+            <p>법률이 허용하는 최대 범위 내에서, 개발자는 본 앱의 사용 또는 사용 불능으로 인한 간접적, 부수적, 특별, 결과적 또는 징벌적 손해에 대해 책임을 지지 않습니다.</p>
+
+            <h2>10. 약관 변경</h2>
+            <p>당사는 본 이용약관을 수시로 업데이트할 수 있습니다. 중요한 변경 사항이 있을 경우 앱 내에서 알려드립니다.</p>
+
+            <h2>11. 준거법</h2>
+            <p>본 약관은 중화인민공화국 법률에 따라 규율되고 해석됩니다.</p>
+
+            <h2>12. 문의하기</h2>
+            <p>본 이용약관에 관한 질문은 아래로 연락해 주십시오:</p>
+            <ul>
+                <li>Email: <a href="mailto:douglaswan.dev@gmail.com">douglaswan.dev@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/Goldenmonstew/snackguard-site">github.com/Goldenmonstew/snackguard-site</a></li>
+            </ul>
+        </div>
+
+        <!-- French -->
+        <div class="section" id="lang-fr">
+            <p class="date">Derni&egrave;re mise &agrave; jour : 12 f&eacute;vrier 2026</p>
+
+            <h2>1. Acceptation des conditions</h2>
+            <p>Bienvenue sur SnackGuard (l'&laquo; Application &raquo;). En t&eacute;l&eacute;chargeant, installant ou utilisant cette Application, vous acceptez d'&ecirc;tre li&eacute; par les pr&eacute;sentes Conditions d'utilisation. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser l'Application.</p>
+
+            <h2>2. Description du service</h2>
+            <p>SnackGuard est une application intelligente de surveillance des collations con&ccedil;ue pour aider les utilisateurs &agrave; adopter de meilleures habitudes alimentaires. L'Application offre les fonctionnalit&eacute;s suivantes :</p>
+            <ul>
+                <li>D&eacute;tection intelligente des comportements de grignotage par fusion multi-signaux</li>
+                <li>Enregistrement des collations et analyse statistique</li>
+                <li>Syst&egrave;me de succ&egrave;s et m&eacute;canismes de motivation</li>
+                <li>D&eacute;tection collaborative avec Apple Watch</li>
+                <li>Synchronisation des donn&eacute;es inter-appareils via iCloud</li>
+                <li>Widgets pour l'&eacute;cran d'accueil</li>
+            </ul>
+
+            <h2>3. Licence</h2>
+            <p>Nous vous accordons une licence limit&eacute;e, non exclusive, non transf&eacute;rable et r&eacute;vocable pour utiliser l'Application sur les appareils Apple que vous poss&eacute;dez ou contr&ocirc;lez, uniquement &agrave; des fins personnelles et non commerciales.</p>
+
+            <h2>4. Responsabilit&eacute;s de l'utilisateur</h2>
+            <p>En utilisant l'Application, vous acceptez de :</p>
+            <ul>
+                <li>L'utiliser uniquement &agrave; des fins l&eacute;gales</li>
+                <li>Ne pas proc&eacute;der &agrave; l'ing&eacute;nierie inverse, la d&eacute;compilation ou le d&eacute;sassemblage de l'Application</li>
+                <li>Ne pas copier, modifier ou distribuer une partie de l'Application</li>
+                <li>Ne pas utiliser l'Application &agrave; des fins commerciales</li>
+            </ul>
+
+            <h2>5. Avertissement sant&eacute;</h2>
+            <div class="highlight">
+                <p><strong>Important :</strong> SnackGuard n'est pas un dispositif m&eacute;dical et ne fournit pas de conseils m&eacute;dicaux. L'Application est destin&eacute;e uniquement &agrave; servir d'outil suppl&eacute;mentaire pour vous aider &agrave; g&eacute;rer vos habitudes de grignotage. Pour tout probl&egrave;me de sant&eacute;, veuillez consulter un professionnel de sant&eacute; qualifi&eacute;. L'Application n'est pas destin&eacute;e &agrave; diagnostiquer, traiter, gu&eacute;rir ou pr&eacute;venir une maladie.</p>
+            </div>
+
+            <h2>6. Donn&eacute;es et confidentialit&eacute;</h2>
+            <p>Le traitement de vos donn&eacute;es est r&eacute;gi par notre <a href="privacy.html">Politique de confidentialit&eacute;</a>. En r&eacute;sum&eacute; :</p>
+            <ul>
+                <li>Toutes les donn&eacute;es sont stock&eacute;es localement sur votre appareil</li>
+                <li>La synchronisation iCloud est prot&eacute;g&eacute;e par les m&eacute;canismes de s&eacute;curit&eacute; standard d'Apple</li>
+                <li>Nous ne collectons, stockons ni transmettons vos donn&eacute;es personnelles &agrave; nos serveurs</li>
+            </ul>
+
+            <h2>7. Propri&eacute;t&eacute; intellectuelle</h2>
+            <p>L'Application et tout son contenu (y compris le code, le design, les ic&ocirc;nes, le texte et les graphiques) sont la propri&eacute;t&eacute; intellectuelle du d&eacute;veloppeur, prot&eacute;g&eacute;s par le droit d'auteur et les trait&eacute;s internationaux.</p>
+
+            <h2>8. Exclusion de garanties</h2>
+            <p>L'Application est fournie &laquo; en l'&eacute;tat &raquo; et &laquo; selon disponibilit&eacute; &raquo;, sans garantie d'aucune sorte, expresse ou implicite, y compris :</p>
+            <ul>
+                <li>Garantie de qualit&eacute; marchande</li>
+                <li>Garantie d'ad&eacute;quation &agrave; un usage particulier</li>
+                <li>Garantie de non-contrefa&ccedil;on</li>
+                <li>Garantie de pr&eacute;cision de d&eacute;tection</li>
+            </ul>
+
+            <h2>9. Limitation de responsabilit&eacute;</h2>
+            <p>Dans toute la mesure permise par la loi, le d&eacute;veloppeur ne sera pas responsable des dommages indirects, accessoires, sp&eacute;ciaux, cons&eacute;cutifs ou punitifs r&eacute;sultant de l'utilisation ou de l'impossibilit&eacute; d'utiliser l'Application.</p>
+
+            <h2>10. Modification des conditions</h2>
+            <p>Nous pouvons mettre &agrave; jour ces Conditions d'utilisation de temps &agrave; autre. En cas de modifications importantes, nous vous en informerons dans l'Application.</p>
+
+            <h2>11. Droit applicable</h2>
+            <p>Les pr&eacute;sentes conditions sont r&eacute;gies par les lois de la R&eacute;publique populaire de Chine.</p>
+
+            <h2>12. Nous contacter</h2>
+            <p>Pour toute question concernant ces Conditions d'utilisation :</p>
+            <ul>
+                <li>Email : <a href="mailto:douglaswan.dev@gmail.com">douglaswan.dev@gmail.com</a></li>
+                <li>GitHub : <a href="https://github.com/Goldenmonstew/snackguard-site">github.com/Goldenmonstew/snackguard-site</a></li>
+            </ul>
+        </div>
+
+        <!-- German -->
+        <div class="section" id="lang-de">
+            <p class="date">Letzte Aktualisierung: 12. Februar 2026</p>
+
+            <h2>1. Annahme der Bedingungen</h2>
+            <p>Willkommen bei SnackGuard (die &bdquo;App&ldquo;). Durch das Herunterladen, Installieren oder Verwenden dieser App erkl&auml;ren Sie sich mit diesen Nutzungsbedingungen einverstanden. Wenn Sie diesen Bedingungen nicht zustimmen, verwenden Sie die App bitte nicht.</p>
+
+            <h2>2. Dienstbeschreibung</h2>
+            <p>SnackGuard ist eine intelligente Snack-&Uuml;berwachungs-App, die Nutzern helfen soll, ges&uuml;ndere Essgewohnheiten aufzubauen. Die App bietet folgende Funktionen:</p>
+            <ul>
+                <li>Intelligente Erkennung von Snack-Verhalten durch Multi-Signal-Fusion</li>
+                <li>Snack-Aufzeichnung und statistische Analyse</li>
+                <li>Erfolgs-System und Motivationsmechanismen</li>
+                <li>Apple Watch Kooperative Erkennung</li>
+                <li>iCloud ger&auml;te&uuml;bergreifende Datensynchronisation</li>
+                <li>Startbildschirm-Widgets</li>
+            </ul>
+
+            <h2>3. Lizenz</h2>
+            <p>Wir gew&auml;hren Ihnen eine beschr&auml;nkte, nicht-exklusive, nicht &uuml;bertragbare, widerrufliche Lizenz zur Nutzung der App auf Apple-Ger&auml;ten, die Sie besitzen oder kontrollieren, ausschlie&szlig;lich f&uuml;r pers&ouml;nliche, nicht-kommerzielle Zwecke.</p>
+
+            <h2>4. Nutzerverantwortung</h2>
+            <p>Bei der Nutzung der App stimmen Sie zu:</p>
+            <ul>
+                <li>Sie nur f&uuml;r rechtm&auml;&szlig;ige Zwecke zu nutzen</li>
+                <li>Kein Reverse Engineering, Dekompilieren oder Disassemblieren der App</li>
+                <li>Keine Teile der App zu kopieren, &auml;ndern oder verbreiten</li>
+                <li>Die App nicht f&uuml;r kommerzielle Zwecke zu nutzen</li>
+            </ul>
+
+            <h2>5. Gesundheitshinweis</h2>
+            <div class="highlight">
+                <p><strong>Wichtig:</strong> SnackGuard ist kein Medizinprodukt und bietet keine medizinische Beratung. Die App dient ausschlie&szlig;lich als erg&auml;nzendes Werkzeug zur Verwaltung Ihrer Snack-Gewohnheiten. Bei gesundheitlichen Bedenken wenden Sie sich bitte an qualifiziertes medizinisches Fachpersonal. Die App ist nicht zur Diagnose, Behandlung, Heilung oder Vorbeugung von Krankheiten bestimmt.</p>
+            </div>
+
+            <h2>6. Daten &amp; Datenschutz</h2>
+            <p>Die Verarbeitung Ihrer Daten unterliegt unserer <a href="privacy.html">Datenschutzerkl&auml;rung</a>. Zusammenfassung:</p>
+            <ul>
+                <li>Alle Daten werden lokal auf Ihrem Ger&auml;t gespeichert</li>
+                <li>Die iCloud-Synchronisierung wird durch Apples Standard-Sicherheitsmechanismen gesch&uuml;tzt</li>
+                <li>Wir erfassen, speichern oder &uuml;bertragen Ihre pers&ouml;nlichen Daten nicht an unsere Server</li>
+            </ul>
+
+            <h2>7. Geistiges Eigentum</h2>
+            <p>Die App und alle ihre Inhalte (einschlie&szlig;lich Code, Design, Icons, Text und Grafiken) sind geistiges Eigentum des Entwicklers und durch Urheberrecht und internationale Vertr&auml;ge gesch&uuml;tzt.</p>
+
+            <h2>8. Gew&auml;hrleistungsausschluss</h2>
+            <p>Die App wird &bdquo;wie besehen&ldquo; und &bdquo;wie verf&uuml;gbar&ldquo; bereitgestellt, ohne jegliche ausdr&uuml;ckliche oder stillschweigende Gew&auml;hrleistung, einschlie&szlig;lich:</p>
+            <ul>
+                <li>Gew&auml;hrleistung der Marktg&auml;ngigkeit</li>
+                <li>Eignung f&uuml;r einen bestimmten Zweck</li>
+                <li>Nichtverletzung von Rechten</li>
+                <li>Erkennungsgenauigkeit</li>
+            </ul>
+
+            <h2>9. Haftungsbeschr&auml;nkung</h2>
+            <p>Im gr&ouml;&szlig;tm&ouml;glichen gesetzlich zul&auml;ssigen Umfang haftet der Entwickler nicht f&uuml;r indirekte, zuf&auml;llige, besondere, Folge- oder Strafsch&auml;den, die sich aus der Nutzung oder der Unm&ouml;glichkeit der Nutzung der App ergeben.</p>
+
+            <h2>10. &Auml;nderungen der Bedingungen</h2>
+            <p>Wir k&ouml;nnen diese Nutzungsbedingungen von Zeit zu Zeit aktualisieren. Bei wesentlichen &Auml;nderungen werden wir Sie innerhalb der App benachrichtigen.</p>
+
+            <h2>11. Anwendbares Recht</h2>
+            <p>Diese Bedingungen unterliegen den Gesetzen der Volksrepublik China und werden entsprechend ausgelegt.</p>
+
+            <h2>12. Kontakt</h2>
+            <p>Bei Fragen zu diesen Nutzungsbedingungen kontaktieren Sie uns:</p>
+            <ul>
+                <li>Email: <a href="mailto:douglaswan.dev@gmail.com">douglaswan.dev@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/Goldenmonstew/snackguard-site">github.com/Goldenmonstew/snackguard-site</a></li>
+            </ul>
+        </div>
+
+        <!-- Spanish -->
+        <div class="section" id="lang-es">
+            <p class="date">&Uacute;ltima actualizaci&oacute;n: 12 de febrero de 2026</p>
+
+            <h2>1. Aceptaci&oacute;n de los t&eacute;rminos</h2>
+            <p>Bienvenido a SnackGuard (la &ldquo;Aplicaci&oacute;n&rdquo;). Al descargar, instalar o usar esta Aplicaci&oacute;n, usted acepta estar sujeto a estos T&eacute;rminos de uso. Si no est&aacute; de acuerdo con estos t&eacute;rminos, no utilice la Aplicaci&oacute;n.</p>
+
+            <h2>2. Descripci&oacute;n del servicio</h2>
+            <p>SnackGuard es una aplicaci&oacute;n inteligente de monitoreo de snacks dise&ntilde;ada para ayudar a los usuarios a desarrollar h&aacute;bitos alimenticios m&aacute;s saludables. La Aplicaci&oacute;n ofrece las siguientes funciones:</p>
+            <ul>
+                <li>Detecci&oacute;n inteligente del comportamiento de snacks mediante fusi&oacute;n de m&uacute;ltiples se&ntilde;ales</li>
+                <li>Registro de snacks y an&aacute;lisis estad&iacute;stico</li>
+                <li>Sistema de logros y mec&aacute;nicas de motivaci&oacute;n</li>
+                <li>Detecci&oacute;n colaborativa con Apple Watch</li>
+                <li>Sincronizaci&oacute;n de datos entre dispositivos con iCloud</li>
+                <li>Widgets para la pantalla de inicio</li>
+            </ul>
+
+            <h2>3. Licencia</h2>
+            <p>Le otorgamos una licencia limitada, no exclusiva, intransferible y revocable para usar la Aplicaci&oacute;n en dispositivos Apple que usted posee o controla, &uacute;nicamente con fines personales y no comerciales.</p>
+
+            <h2>4. Responsabilidades del usuario</h2>
+            <p>Al usar la Aplicaci&oacute;n, usted acepta:</p>
+            <ul>
+                <li>Usarla solo con fines legales</li>
+                <li>No realizar ingenier&iacute;a inversa, descompilar ni desensamblar la Aplicaci&oacute;n</li>
+                <li>No copiar, modificar ni distribuir ninguna parte de la Aplicaci&oacute;n</li>
+                <li>No usar la Aplicaci&oacute;n con fines comerciales</li>
+            </ul>
+
+            <h2>5. Aviso de salud</h2>
+            <div class="highlight">
+                <p><strong>Importante:</strong> SnackGuard no es un dispositivo m&eacute;dico y no proporciona asesoramiento m&eacute;dico. La Aplicaci&oacute;n est&aacute; destinada &uacute;nicamente como herramienta complementaria para ayudarle a gestionar sus h&aacute;bitos de snacks. Para problemas de salud, consulte a un profesional de salud cualificado. La Aplicaci&oacute;n no est&aacute; destinada a diagnosticar, tratar, curar o prevenir ninguna enfermedad.</p>
+            </div>
+
+            <h2>6. Datos y privacidad</h2>
+            <p>El tratamiento de sus datos se rige por nuestra <a href="privacy.html">Pol&iacute;tica de Privacidad</a>. En resumen:</p>
+            <ul>
+                <li>Todos los datos se almacenan localmente en su dispositivo</li>
+                <li>La sincronizaci&oacute;n con iCloud est&aacute; protegida por los mecanismos de seguridad est&aacute;ndar de Apple</li>
+                <li>No recopilamos, almacenamos ni transmitimos sus datos personales a nuestros servidores</li>
+            </ul>
+
+            <h2>7. Propiedad intelectual</h2>
+            <p>La Aplicaci&oacute;n y todo su contenido (incluyendo c&oacute;digo, dise&ntilde;o, iconos, texto y gr&aacute;ficos) son propiedad intelectual del desarrollador, protegidos por las leyes de derechos de autor y tratados internacionales.</p>
+
+            <h2>8. Exenci&oacute;n de garant&iacute;as</h2>
+            <p>La Aplicaci&oacute;n se proporciona &ldquo;tal cual&rdquo; y &ldquo;seg&uacute;n disponibilidad&rdquo;, sin garant&iacute;as de ning&uacute;n tipo, expresas o impl&iacute;citas, incluyendo:</p>
+            <ul>
+                <li>Garant&iacute;a de comerciabilidad</li>
+                <li>Idoneidad para un prop&oacute;sito particular</li>
+                <li>No infracci&oacute;n</li>
+                <li>Precisi&oacute;n de detecci&oacute;n</li>
+            </ul>
+
+            <h2>9. Limitaci&oacute;n de responsabilidad</h2>
+            <p>En la m&aacute;xima medida permitida por la ley, el desarrollador no ser&aacute; responsable de ning&uacute;n da&ntilde;o indirecto, incidental, especial, consecuente o punitivo derivado del uso o la imposibilidad de uso de la Aplicaci&oacute;n.</p>
+
+            <h2>10. Cambios en los t&eacute;rminos</h2>
+            <p>Podemos actualizar estos T&eacute;rminos de uso de vez en cuando. Para cambios significativos, le notificaremos dentro de la Aplicaci&oacute;n.</p>
+
+            <h2>11. Ley aplicable</h2>
+            <p>Estos t&eacute;rminos se rigen por las leyes de la Rep&uacute;blica Popular China.</p>
+
+            <h2>12. Cont&aacute;ctenos</h2>
+            <p>Si tiene preguntas sobre estos T&eacute;rminos de uso:</p>
+            <ul>
+                <li>Email: <a href="mailto:douglaswan.dev@gmail.com">douglaswan.dev@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/Goldenmonstew/snackguard-site">github.com/Goldenmonstew/snackguard-site</a></li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 SnackGuard. All rights reserved.</p>
+            <p><a href="mailto:douglaswan.dev@gmail.com">douglaswan.dev@gmail.com</a></p>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.lang-switch a').forEach(a => a.classList.remove('active'));
+            document.getElementById('lang-' + lang).classList.add('active');
+            document.getElementById('btn-' + lang).classList.add('active');
+            localStorage.setItem('sg-lang', lang);
+        }
+        (function() {
+            var saved = localStorage.getItem('sg-lang');
+            if (saved && document.getElementById('lang-' + saved)) { switchLang(saved); return; }
+            var b = (navigator.language || '').toLowerCase();
+            if (b.startsWith('ja')) switchLang('ja');
+            else if (b.startsWith('ko')) switchLang('ko');
+            else if (b.startsWith('fr')) switchLang('fr');
+            else if (b.startsWith('de')) switchLang('de');
+            else if (b.startsWith('es')) switchLang('es');
+            else if (b.startsWith('zh')) switchLang('zh');
+            else switchLang('en');
+        })();
+    </script>
+</body>
+</html>
