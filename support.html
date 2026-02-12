@@ -237,7 +237,14 @@
             document.querySelectorAll('.lang-switch a').forEach(a => a.classList.remove('active'));
             document.getElementById('lang-' + lang).classList.add('active');
             document.getElementById('btn-' + lang).classList.add('active');
+            localStorage.setItem('sg-lang', lang);
         }
+        (function() {
+            var saved = localStorage.getItem('sg-lang');
+            if (saved && document.getElementById('lang-' + saved)) { switchLang(saved); return; }
+            var b = (navigator.language || '').toLowerCase();
+            switchLang(b.startsWith('zh') ? 'zh' : 'en');
+        })();
     </script>
 </body>
 </html>

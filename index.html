@@ -11,6 +11,30 @@
             color: #1d1d1f;
             background: #000;
         }
+        .lang-bar {
+            position: fixed;
+            top: 16px;
+            right: 16px;
+            z-index: 100;
+            display: flex;
+            gap: 8px;
+        }
+        .lang-bar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 6px 14px;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 20px;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s;
+            backdrop-filter: blur(10px);
+            background: rgba(0,0,0,0.3);
+        }
+        .lang-bar a:hover, .lang-bar a.active {
+            background: rgba(255,255,255,0.2);
+            border-color: #fff;
+        }
         .hero {
             min-height: 100vh;
             display: flex;
@@ -24,171 +48,54 @@
                         linear-gradient(180deg, #0a0a0a 0%, #111 100%);
         }
         .logo {
-            width: 120px;
-            height: 120px;
+            width: 120px; height: 120px;
             background: linear-gradient(135deg, #0DF259 0%, #0ab844 100%);
             border-radius: 28px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: flex; align-items: center; justify-content: center;
             font-size: 56px;
             margin-bottom: 32px;
             box-shadow: 0 0 60px rgba(13, 242, 89, 0.3);
         }
-        .hero h1 {
-            font-size: 56px;
-            font-weight: 700;
-            color: #fff;
-            letter-spacing: -0.02em;
-            margin-bottom: 12px;
-        }
-        .hero .subtitle {
-            font-size: 24px;
-            color: rgba(255,255,255,0.6);
-            font-weight: 400;
-            margin-bottom: 48px;
-        }
-        .badge {
-            display: inline-block;
-            margin-top: 8px;
-        }
-        .badge img {
-            height: 54px;
-        }
+        .hero h1 { font-size: 56px; font-weight: 700; color: #fff; letter-spacing: -0.02em; margin-bottom: 12px; }
+        .hero .subtitle { font-size: 24px; color: rgba(255,255,255,0.6); font-weight: 400; margin-bottom: 48px; }
         .badge-placeholder {
-            display: inline-block;
-            padding: 14px 32px;
-            background: #fff;
-            color: #000;
-            border-radius: 12px;
-            font-size: 17px;
-            font-weight: 600;
-            text-decoration: none;
+            display: inline-block; padding: 14px 32px;
+            background: #fff; color: #000; border-radius: 12px;
+            font-size: 17px; font-weight: 600; text-decoration: none;
             transition: transform 0.2s;
         }
         .badge-placeholder:hover { transform: scale(1.05); }
-
-        .features {
-            background: #f5f5f7;
-            padding: 80px 24px;
-        }
+        .features { background: #f5f5f7; padding: 80px 24px; }
         .features-grid {
-            max-width: 960px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 32px;
+            max-width: 960px; margin: 0 auto;
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px;
         }
-        .features h2 {
-            text-align: center;
-            font-size: 40px;
-            font-weight: 700;
-            margin-bottom: 48px;
-            color: #1d1d1f;
-        }
-        .feature-card {
-            background: #fff;
-            border-radius: 20px;
-            padding: 32px;
-            text-align: center;
-        }
-        .feature-icon {
-            font-size: 48px;
-            margin-bottom: 16px;
-        }
-        .feature-card h3 {
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: #1d1d1f;
-        }
-        .feature-card p {
-            font-size: 15px;
-            color: #6e6e73;
-            line-height: 1.5;
-        }
-
-        .privacy-banner {
-            background: #1d1d1f;
-            padding: 60px 24px;
-            text-align: center;
-        }
-        .privacy-banner h2 {
-            font-size: 32px;
-            font-weight: 700;
-            color: #fff;
-            margin-bottom: 16px;
-        }
-        .privacy-banner p {
-            font-size: 17px;
-            color: rgba(255,255,255,0.6);
-            max-width: 600px;
-            margin: 0 auto 24px;
-            line-height: 1.6;
-        }
-        .privacy-items {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            margin-top: 24px;
-        }
-        .privacy-item {
-            color: #0DF259;
-            font-size: 15px;
-            font-weight: 500;
-        }
-
-        .lang-section {
-            background: #f5f5f7;
-            padding: 60px 24px;
-            text-align: center;
-        }
-        .lang-section h2 {
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 12px;
-        }
-        .lang-section p {
-            font-size: 17px;
-            color: #6e6e73;
-            margin-bottom: 24px;
-        }
-        .lang-tags {
-            max-width: 700px;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 8px;
-        }
-        .lang-tag {
-            background: #fff;
-            padding: 6px 14px;
-            border-radius: 16px;
-            font-size: 13px;
-            color: #424245;
-        }
-
-        footer {
-            background: #000;
-            color: rgba(255,255,255,0.4);
-            text-align: center;
-            padding: 32px 24px;
-            font-size: 13px;
-        }
-        footer a {
-            color: rgba(255,255,255,0.6);
-            text-decoration: none;
-        }
+        .features h2 { text-align: center; font-size: 40px; font-weight: 700; margin-bottom: 48px; color: #1d1d1f; }
+        .feature-card { background: #fff; border-radius: 20px; padding: 32px; text-align: center; }
+        .feature-icon { font-size: 48px; margin-bottom: 16px; }
+        .feature-card h3 { font-size: 20px; font-weight: 600; margin-bottom: 8px; color: #1d1d1f; }
+        .feature-card p { font-size: 15px; color: #6e6e73; line-height: 1.5; }
+        .privacy-banner { background: #1d1d1f; padding: 60px 24px; text-align: center; }
+        .privacy-banner h2 { font-size: 32px; font-weight: 700; color: #fff; margin-bottom: 16px; }
+        .privacy-banner p { font-size: 17px; color: rgba(255,255,255,0.6); max-width: 600px; margin: 0 auto 24px; line-height: 1.6; }
+        .privacy-items { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 24px; }
+        .privacy-item { color: #0DF259; font-size: 15px; font-weight: 500; }
+        .lang-section { background: #f5f5f7; padding: 60px 24px; text-align: center; }
+        .lang-section h2 { font-size: 32px; font-weight: 700; margin-bottom: 12px; }
+        .lang-section p { font-size: 17px; color: #6e6e73; margin-bottom: 24px; }
+        .lang-tags { max-width: 700px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+        .lang-tag { background: #fff; padding: 6px 14px; border-radius: 16px; font-size: 13px; color: #424245; }
+        footer { background: #000; color: rgba(255,255,255,0.4); text-align: center; padding: 32px 24px; font-size: 13px; }
+        footer a { color: rgba(255,255,255,0.6); text-decoration: none; }
         footer a:hover { color: #0DF259; }
-        .footer-links {
-            margin-bottom: 12px;
-        }
-        .footer-links a {
-            margin: 0 16px;
-        }
-
+        .footer-links { margin-bottom: 12px; }
+        .footer-links a { margin: 0 16px; }
+        [data-lang] { display: none; }
+        [data-lang].active { display: unset; }
+        h2[data-lang].active, p[data-lang].active { display: block; }
+        span[data-lang].active { display: inline; }
+        div.features-grid[data-lang].active { display: grid; }
+        div.privacy-items[data-lang].active { display: flex; }
         @media (max-width: 600px) {
             .hero h1 { font-size: 36px; }
             .hero .subtitle { font-size: 18px; }
@@ -198,16 +105,56 @@
     </style>
 </head>
 <body>
+    <div class="lang-bar">
+        <a onclick="switchLang('zh')" id="btn-zh">中文</a>
+        <a onclick="switchLang('en')" id="btn-en">EN</a>
+    </div>
+
     <section class="hero">
         <div class="logo">🛡️</div>
         <h1>SnackGuard</h1>
-        <p class="subtitle">Smart Snack Monitor & Habit Tracker<br>智能零食监控，帮你少吃零食</p>
-        <a href="https://apps.apple.com/app/snackguard" class="badge-placeholder">Download on the App Store</a>
+        <p class="subtitle" data-lang="zh">智能零食监控，帮你少吃零食</p>
+        <p class="subtitle" data-lang="en">Smart Snack Monitor & Habit Tracker</p>
+        <a href="https://apps.apple.com/app/snackguard" class="badge-placeholder" data-lang="zh">在 App Store 下载</a>
+        <a href="https://apps.apple.com/app/snackguard" class="badge-placeholder" data-lang="en">Download on the App Store</a>
     </section>
 
     <section class="features">
-        <h2>Features</h2>
-        <div class="features-grid">
+        <h2 data-lang="zh">功能特性</h2>
+        <h2 data-lang="en">Features</h2>
+        <div class="features-grid" data-lang="zh">
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <h3>智能检测</h3>
+                <p>基于贝叶斯算法的多信号融合检测，结合时间、位置、运动和心率数据，精准识别零食时刻。</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⌚</div>
+                <h3>Apple Watch</h3>
+                <p>检测手腕动作和进食模式，心率监测为检测准确性增加一层保障。</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>数据统计</h3>
+                <p>日、周、月统计图表，追踪你的连续抵抗天数，直观看到进步趋势。</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <h3>500+ 成就</h3>
+                <p>5 个稀有度等级，8 大类别，精美动画庆祝每一次突破。</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">☁️</div>
+                <h3>iCloud 同步</h3>
+                <p>在所有 Apple 设备间无缝同步数据，你的进步永远不会丢失。</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📝</div>
+                <h3>反思笔记</h3>
+                <p>为每次选择添加笔记，建立对零食触发因素和模式的自我认知。</p>
+            </div>
+        </div>
+        <div class="features-grid" data-lang="en">
             <div class="feature-card">
                 <div class="feature-icon">🧠</div>
                 <h3>Smart Detection</h3>
@@ -242,9 +189,17 @@
     </section>
 
     <section class="privacy-banner">
-        <h2>Privacy First</h2>
-        <p>All data stays on your device. No accounts, no tracking, no ads. Your snacking habits are nobody's business but yours.</p>
-        <div class="privacy-items">
+        <h2 data-lang="zh">隐私至上</h2>
+        <h2 data-lang="en">Privacy First</h2>
+        <p data-lang="zh">所有数据留在你的设备上。无需账号、无追踪、无广告。你的零食习惯只属于你自己。</p>
+        <p data-lang="en">All data stays on your device. No accounts, no tracking, no ads. Your snacking habits are nobody's business but yours.</p>
+        <div class="privacy-items" data-lang="zh">
+            <span class="privacy-item">&#10003; 不收集数据</span>
+            <span class="privacy-item">&#10003; 无第三方 SDK</span>
+            <span class="privacy-item">&#10003; 零广告</span>
+            <span class="privacy-item">&#10003; 完全离线</span>
+        </div>
+        <div class="privacy-items" data-lang="en">
             <span class="privacy-item">&#10003; No data collection</span>
             <span class="privacy-item">&#10003; No third-party SDKs</span>
             <span class="privacy-item">&#10003; No ads</span>
@@ -253,52 +208,60 @@
     </section>
 
     <section class="lang-section">
-        <h2>33 Languages</h2>
-        <p>SnackGuard speaks your language.</p>
+        <h2 data-lang="zh">支持 33 种语言</h2>
+        <h2 data-lang="en">33 Languages</h2>
+        <p data-lang="zh">SnackGuard 说你的语言。</p>
+        <p data-lang="en">SnackGuard speaks your language.</p>
         <div class="lang-tags">
-            <span class="lang-tag">简体中文</span>
-            <span class="lang-tag">繁體中文</span>
-            <span class="lang-tag">English</span>
-            <span class="lang-tag">日本語</span>
-            <span class="lang-tag">한국어</span>
-            <span class="lang-tag">Français</span>
-            <span class="lang-tag">Deutsch</span>
-            <span class="lang-tag">Español</span>
-            <span class="lang-tag">Português</span>
-            <span class="lang-tag">Русский</span>
-            <span class="lang-tag">Italiano</span>
-            <span class="lang-tag">العربية</span>
-            <span class="lang-tag">Nederlands</span>
-            <span class="lang-tag">Svenska</span>
-            <span class="lang-tag">Dansk</span>
-            <span class="lang-tag">Suomi</span>
-            <span class="lang-tag">Norsk</span>
-            <span class="lang-tag">Polski</span>
-            <span class="lang-tag">Türkçe</span>
-            <span class="lang-tag">ไทย</span>
-            <span class="lang-tag">Tiếng Việt</span>
-            <span class="lang-tag">Bahasa Indonesia</span>
-            <span class="lang-tag">Bahasa Melayu</span>
-            <span class="lang-tag">हिन्दी</span>
-            <span class="lang-tag">עברית</span>
-            <span class="lang-tag">Ελληνικά</span>
-            <span class="lang-tag">Čeština</span>
-            <span class="lang-tag">Slovenčina</span>
-            <span class="lang-tag">Magyar</span>
-            <span class="lang-tag">Română</span>
-            <span class="lang-tag">Українська</span>
-            <span class="lang-tag">Hrvatski</span>
+            <span class="lang-tag">简体中文</span><span class="lang-tag">繁體中文</span>
+            <span class="lang-tag">English</span><span class="lang-tag">日本語</span>
+            <span class="lang-tag">한국어</span><span class="lang-tag">Français</span>
+            <span class="lang-tag">Deutsch</span><span class="lang-tag">Español</span>
+            <span class="lang-tag">Português</span><span class="lang-tag">Русский</span>
+            <span class="lang-tag">Italiano</span><span class="lang-tag">العربية</span>
+            <span class="lang-tag">Nederlands</span><span class="lang-tag">Svenska</span>
+            <span class="lang-tag">Dansk</span><span class="lang-tag">Suomi</span>
+            <span class="lang-tag">Norsk</span><span class="lang-tag">Polski</span>
+            <span class="lang-tag">Türkçe</span><span class="lang-tag">ไทย</span>
+            <span class="lang-tag">Tiếng Việt</span><span class="lang-tag">Bahasa Indonesia</span>
+            <span class="lang-tag">Bahasa Melayu</span><span class="lang-tag">हिन्दी</span>
+            <span class="lang-tag">עברית</span><span class="lang-tag">Ελληνικά</span>
+            <span class="lang-tag">Čeština</span><span class="lang-tag">Slovenčina</span>
+            <span class="lang-tag">Magyar</span><span class="lang-tag">Română</span>
+            <span class="lang-tag">Українська</span><span class="lang-tag">Hrvatski</span>
             <span class="lang-tag">Català</span>
         </div>
     </section>
 
     <footer>
         <div class="footer-links">
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="support.html">Support</a>
-            <a href="mailto:douglaswan.dev@gmail.com">Contact</a>
+            <span data-lang="zh"><a href="privacy.html">隐私政策</a></span>
+            <span data-lang="en"><a href="privacy.html">Privacy Policy</a></span>
+            <span data-lang="zh"><a href="support.html">支持</a></span>
+            <span data-lang="en"><a href="support.html">Support</a></span>
+            <a href="mailto:douglaswan.dev@gmail.com">
+                <span data-lang="zh">联系我们</span>
+                <span data-lang="en">Contact</span>
+            </a>
         </div>
         <p>&copy; 2026 SnackGuard. All rights reserved.</p>
     </footer>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('[data-lang]').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('[data-lang="' + lang + '"]').forEach(el => el.classList.add('active'));
+            document.querySelectorAll('.lang-bar a').forEach(a => a.classList.remove('active'));
+            document.getElementById('btn-' + lang).classList.add('active');
+            localStorage.setItem('sg-lang', lang);
+        }
+        // Auto-detect: saved preference > browser language > default en
+        (function() {
+            var saved = localStorage.getItem('sg-lang');
+            if (saved) { switchLang(saved); return; }
+            var browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+            switchLang(browserLang.startsWith('zh') ? 'zh' : 'en');
+        })();
+    </script>
 </body>
 </html>
