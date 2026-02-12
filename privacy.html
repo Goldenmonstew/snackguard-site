@@ -26,6 +26,7 @@
             justify-content: center;
             gap: 12px;
             margin-top: 20px;
+            flex-wrap: wrap;
         }
         .lang-switch a {
             color: #fff;
@@ -86,8 +87,12 @@
         <p>Privacy Policy / 隐私政策 / プライバシーポリシー</p>
         <div class="lang-switch">
             <a href="#" onclick="switchLang('zh')" id="btn-zh" class="active">中文</a>
-            <a href="#" onclick="switchLang('en')" id="btn-en">English</a>
+            <a href="#" onclick="switchLang('en')" id="btn-en">EN</a>
             <a href="#" onclick="switchLang('ja')" id="btn-ja">日本語</a>
+            <a href="#" onclick="switchLang('ko')" id="btn-ko">한국어</a>
+            <a href="#" onclick="switchLang('fr')" id="btn-fr">FR</a>
+            <a href="#" onclick="switchLang('de')" id="btn-de">DE</a>
+            <a href="#" onclick="switchLang('es')" id="btn-es">ES</a>
         </div>
     </div>
 
@@ -420,6 +425,446 @@
             </ul>
         </div>
 
+        <!-- Korean -->
+        <div id="lang-ko" class="section">
+            <p class="date">최종 업데이트: 2026년 2월 12일 | 시행일: 2026년 2월 12일</p>
+
+            <h2>1. 소개</h2>
+            <p>SnackGuard(이하 "본 앱")를 이용해 주셔서 감사합니다. 저희는 귀하의 개인정보 보호를 매우 중요하게 생각합니다. 본 개인정보 처리방침은 저희가 귀하의 정보를 어떻게 수집, 사용, 저장 및 보호하는지 설명합니다.</p>
+
+            <h2>2. 정보 수집</h2>
+
+            <h3>2.1 수집하는 정보</h3>
+            <p><strong>로컬에 저장되는 데이터:</strong></p>
+            <ul>
+                <li><strong>간식 기록:</strong> 간식 섭취 시간, 설명, 반성 내용</li>
+                <li><strong>업적 데이터:</strong> 달성한 업적, 연속 일수, 참기 횟수 등 통계 정보</li>
+                <li><strong>앱 설정:</strong> 언어 선택, 애니메이션 설정, 일일 간식 허용량 등 환경설정</li>
+            </ul>
+
+            <p><strong>위치 정보 (선택 사항):</strong></p>
+            <ul>
+                <li>귀하의 허가가 있을 때만 대략적인 위치 데이터를 사용하여 음식점 근처에 있는지 판단합니다</li>
+                <li>로컬 스마트 감지 기능에만 사용되며, <strong>어떠한 서버에도 업로드되지 않습니다</strong></li>
+            </ul>
+
+            <p><strong>모션 센서 데이터 (선택 사항):</strong></p>
+            <ul>
+                <li>기기 모션 데이터는 식사 행동 감지를 보조하는 데 사용됩니다</li>
+                <li>모든 처리는 기기 내에서 로컬로 완료됩니다</li>
+            </ul>
+
+            <p><strong>건강 데이터 (Apple Watch):</strong></p>
+            <ul>
+                <li>심박수 데이터는 식사 행동 감지를 보조하는 데 사용됩니다</li>
+                <li>Apple Watch에서만 사용되며, <strong>저희 서버에 동기화되지 않습니다</strong></li>
+                <li>모든 건강 데이터 처리는 기기 내에서 로컬로 완료됩니다</li>
+            </ul>
+
+            <h3>2.2 수집하지 않는 정보</h3>
+            <ul>
+                <li class="no-collect">&#10006; 이름, 전화번호, 이메일을 수집하지 않습니다</li>
+                <li class="no-collect">&#10006; 기기 고유 식별자(IDFA/IDFV)를 수집하지 않습니다</li>
+                <li class="no-collect">&#10006; 브라우징 행동을 추적하지 않습니다</li>
+                <li class="no-collect">&#10006; 제3자 광고 또는 분석 SDK를 사용하지 않습니다</li>
+                <li class="no-collect">&#10006; 귀하의 어떠한 데이터도 저희 서버에 업로드하지 않습니다</li>
+            </ul>
+
+            <h2>3. 정보 사용</h2>
+            <p>수집된 정보는 다음 목적으로만 사용됩니다:</p>
+            <ul>
+                <li><strong>핵심 기능:</strong> 간식 기록, 통계 표시, 업적 달성</li>
+                <li><strong>스마트 감지:</strong> 시간, 위치, 기기 상태 기반의 스마트 알림 제공</li>
+                <li><strong>데이터 동기화:</strong> iCloud를 통한 기기 간 데이터 동기화 (사용자가 직접 활성화해야 함)</li>
+            </ul>
+
+            <h2>4. 정보 저장</h2>
+            <h3>4.1 로컬 저장소</h3>
+            <ul>
+                <li>모든 데이터는 먼저 귀하의 기기에 로컬로 저장됩니다</li>
+                <li>iOS 표준 암호화 메커니즘으로 데이터를 보호합니다</li>
+            </ul>
+            <h3>4.2 iCloud 동기화 (선택 사항)</h3>
+            <ul>
+                <li>iCloud 동기화를 활성화하면 Apple의 iCloud Key-Value Store 서비스를 통해 데이터가 동기화됩니다</li>
+                <li>저희는 귀하의 iCloud에 저장된 데이터에 접근할 수 없습니다</li>
+                <li>동기화는 Apple의 표준 iCloud 보안(전송 및 저장 시 암호화)으로 보호됩니다</li>
+            </ul>
+
+            <h2>5. 정보 공유</h2>
+            <div class="highlight">
+                <strong>저희는 귀하의 개인정보를 제3자와 절대 공유, 판매 또는 임대하지 않습니다.</strong>
+            </div>
+            <p>유일한 예외는 법적 요구 사항입니다: 법적 절차, 법원 명령 또는 정부 요청을 준수하기 위한 경우, 본 앱, 사용자 또는 공공의 권리, 재산 또는 안전을 보호하기 위한 경우.</p>
+
+            <h2>6. 데이터 보안</h2>
+            <ul>
+                <li>iOS 시스템 수준 암호화 사용</li>
+                <li>외부 서버로 데이터를 전송하지 않음</li>
+                <li>iCloud 동기화는 Apple의 표준 보안 메커니즘으로 보호</li>
+                <li>보안 취약점 수정을 위해 정기적으로 앱 업데이트</li>
+            </ul>
+
+            <h2>7. 귀하의 권리</h2>
+            <ul>
+                <li><strong>접근 권한:</strong> 모든 데이터는 앱 내에서 확인할 수 있습니다</li>
+                <li><strong>삭제 권한:</strong> 언제든지 개별 기록을 삭제하거나 모든 데이터를 지울 수 있습니다</li>
+                <li><strong>내보내기 권한:</strong> 데이터는 귀하의 iCloud 계정에 저장되며 언제든지 내보낼 수 있습니다</li>
+                <li><strong>권한 철회:</strong> iOS 설정에서 언제든지 위치, 모션, 건강 데이터 권한을 철회할 수 있습니다</li>
+            </ul>
+
+            <h2>8. 아동 개인정보 보호</h2>
+            <p>본 앱은 모든 연령에 적합하며(4+), 13세 미만 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+
+            <h2>9. 제3자 서비스</h2>
+            <p>본 앱은 <strong>제3자 분석, 광고 또는 추적 서비스를 일체 사용하지 않습니다</strong>.</p>
+            <p>사용 중인 Apple 서비스:</p>
+            <ul>
+                <li class="yes-collect">&#10004; iCloud Key-Value Store - 기기 간 데이터 동기화용</li>
+                <li class="yes-collect">&#10004; HealthKit (Apple Watch 전용) - 심박수 데이터 읽기</li>
+            </ul>
+
+            <h2>10. 개인정보 처리방침 변경</h2>
+            <p>본 개인정보 처리방침은 수시로 업데이트될 수 있습니다. 중요한 변경이 있을 경우 앱 내에서 알려드립니다.</p>
+
+            <h2>11. 문의하기</h2>
+            <p>본 개인정보 처리방침에 대한 질문이 있으시면:</p>
+            <ul>
+                <li>Email: <a href="mailto:douglaswan.dev@gmail.com">douglaswan.dev@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/Goldenmonstew/snackguard-site">github.com/Goldenmonstew/SnackGuard</a></li>
+            </ul>
+        </div>
+
+        <!-- French -->
+        <div id="lang-fr" class="section">
+            <p class="date">Derni&egrave;re mise &agrave; jour : 12 f&eacute;vrier 2026 | Date d'entr&eacute;e en vigueur : 12 f&eacute;vrier 2026</p>
+
+            <h2>1. Introduction</h2>
+            <p>Bienvenue sur SnackGuard (ci-apr&egrave;s &laquo; l'Application &raquo;). Nous accordons une grande importance &agrave; la protection de votre vie priv&eacute;e et de vos donn&eacute;es personnelles. La pr&eacute;sente Politique de confidentialit&eacute; explique comment nous collectons, utilisons, stockons et prot&eacute;geons vos informations.</p>
+
+            <h2>2. Collecte d'informations</h2>
+
+            <h3>2.1 Informations que nous collectons</h3>
+            <p><strong>Donn&eacute;es stock&eacute;es localement :</strong></p>
+            <ul>
+                <li><strong>Historique de grignotage :</strong> Horodatages, descriptions et r&eacute;flexions de vos enregistrements de grignotage</li>
+                <li><strong>Donn&eacute;es de succ&egrave;s :</strong> Succ&egrave;s d&eacute;bloqu&eacute;s, jours cons&eacute;cutifs, nombre de r&eacute;sistances et autres statistiques</li>
+                <li><strong>Param&egrave;tres de l'application :</strong> Vos pr&eacute;f&eacute;rences telles que la langue, les animations, la limite quotidienne de grignotage</li>
+            </ul>
+
+            <p><strong>Informations de localisation (optionnel) :</strong></p>
+            <ul>
+                <li>Uniquement avec votre autorisation, utilise des donn&eacute;es de localisation approximatives pour d&eacute;tecter si vous &ecirc;tes &agrave; proximit&eacute; d'&eacute;tablissements alimentaires</li>
+                <li>Utilis&eacute;es uniquement pour la d&eacute;tection intelligente locale, <strong>jamais envoy&eacute;es vers un serveur</strong></li>
+            </ul>
+
+            <p><strong>Donn&eacute;es du capteur de mouvement (optionnel) :</strong></p>
+            <ul>
+                <li>Les donn&eacute;es de mouvement de l'appareil aident &agrave; d&eacute;tecter les comportements alimentaires</li>
+                <li>Tout le traitement est effectu&eacute; localement sur votre appareil</li>
+            </ul>
+
+            <p><strong>Donn&eacute;es de sant&eacute; (Apple Watch) :</strong></p>
+            <ul>
+                <li>Les donn&eacute;es de fr&eacute;quence cardiaque aident &agrave; d&eacute;tecter les comportements alimentaires</li>
+                <li>Utilis&eacute;es uniquement sur Apple Watch, <strong>jamais synchronis&eacute;es avec nos serveurs</strong></li>
+                <li>Tout le traitement des donn&eacute;es de sant&eacute; est effectu&eacute; localement sur votre appareil</li>
+            </ul>
+
+            <h3>2.2 Informations que nous ne collectons PAS</h3>
+            <ul>
+                <li class="no-collect">&#10006; Nous ne collectons PAS votre nom, num&eacute;ro de t&eacute;l&eacute;phone ou adresse e-mail</li>
+                <li class="no-collect">&#10006; Nous ne collectons PAS les identifiants uniques de l'appareil (IDFA/IDFV)</li>
+                <li class="no-collect">&#10006; Nous ne suivons PAS votre comportement de navigation</li>
+                <li class="no-collect">&#10006; Nous n'utilisons PAS de SDK publicitaires ou analytiques tiers</li>
+                <li class="no-collect">&#10006; Nous ne t&eacute;l&eacute;chargeons AUCUNE de vos donn&eacute;es vers nos serveurs</li>
+            </ul>
+
+            <h2>3. Utilisation des informations</h2>
+            <p>Les informations collect&eacute;es sont utilis&eacute;es uniquement aux fins suivantes :</p>
+            <ul>
+                <li><strong>Fonctions principales :</strong> Enregistrer les grignotages, afficher les statistiques, d&eacute;bloquer les succ&egrave;s</li>
+                <li><strong>D&eacute;tection intelligente :</strong> Fournir des rappels intelligents bas&eacute;s sur l'heure, la localisation et l'&eacute;tat de l'appareil</li>
+                <li><strong>Synchronisation des donn&eacute;es :</strong> Synchroniser les donn&eacute;es entre vos appareils via iCloud (n&eacute;cessite votre activation)</li>
+            </ul>
+
+            <h2>4. Stockage des informations</h2>
+            <h3>4.1 Stockage local</h3>
+            <ul>
+                <li>Toutes les donn&eacute;es sont d'abord stock&eacute;es localement sur votre appareil</li>
+                <li>Prot&eacute;g&eacute;es par les m&eacute;canismes de chiffrement standard d'iOS</li>
+            </ul>
+            <h3>4.2 Synchronisation iCloud (optionnel)</h3>
+            <ul>
+                <li>Si vous activez la synchronisation iCloud, les donn&eacute;es seront synchronis&eacute;es via le service iCloud Key-Value Store d'Apple</li>
+                <li>Nous ne pouvons pas acc&eacute;der aux donn&eacute;es stock&eacute;es dans votre iCloud</li>
+                <li>La synchronisation est prot&eacute;g&eacute;e par la s&eacute;curit&eacute; standard iCloud d'Apple (chiffrement en transit et au repos)</li>
+            </ul>
+
+            <h2>5. Partage des informations</h2>
+            <div class="highlight">
+                <strong>Nous ne partagerons, vendrons ou louerons JAMAIS vos informations personnelles &agrave; un tiers.</strong>
+            </div>
+            <p>La seule exception concerne les exigences l&eacute;gales : pour se conformer aux proc&eacute;dures judiciaires, ordonnances de tribunaux ou demandes gouvernementales ; pour prot&eacute;ger les droits, la propri&eacute;t&eacute; ou la s&eacute;curit&eacute; de l'Application, de nos utilisateurs ou du public.</p>
+
+            <h2>6. S&eacute;curit&eacute; des donn&eacute;es</h2>
+            <ul>
+                <li>Utilisation du chiffrement au niveau syst&egrave;me iOS</li>
+                <li>Aucune transmission de donn&eacute;es vers des serveurs externes</li>
+                <li>La synchronisation iCloud est prot&eacute;g&eacute;e par les m&eacute;canismes de s&eacute;curit&eacute; standard d'Apple</li>
+                <li>Mises &agrave; jour r&eacute;guli&egrave;res de l'application pour corriger les vuln&eacute;rabilit&eacute;s de s&eacute;curit&eacute;</li>
+            </ul>
+
+            <h2>7. Vos droits</h2>
+            <ul>
+                <li><strong>Acc&egrave;s :</strong> Toutes les donn&eacute;es sont consultables dans l'application</li>
+                <li><strong>Suppression :</strong> Vous pouvez supprimer des enregistrements individuels ou effacer toutes les donn&eacute;es &agrave; tout moment</li>
+                <li><strong>Exportation :</strong> Les donn&eacute;es sont stock&eacute;es dans votre compte iCloud et peuvent &ecirc;tre export&eacute;es &agrave; tout moment</li>
+                <li><strong>R&eacute;vocation :</strong> Vous pouvez r&eacute;voquer les autorisations de localisation, mouvement et donn&eacute;es de sant&eacute; dans les R&eacute;glages iOS &agrave; tout moment</li>
+            </ul>
+
+            <h2>8. Vie priv&eacute;e des enfants</h2>
+            <p>Cette application est adapt&eacute;e &agrave; tous les &acirc;ges (4+) et ne collecte pas sciemment d'informations personnelles aupr&egrave;s d'enfants de moins de 13 ans.</p>
+
+            <h2>9. Services tiers</h2>
+            <p>Cette application <strong>n'utilise AUCUN service tiers d'analyse, de publicit&eacute; ou de suivi</strong>.</p>
+            <p>Seuls les services Apple suivants sont utilis&eacute;s :</p>
+            <ul>
+                <li class="yes-collect">&#10004; iCloud Key-Value Store - Pour la synchronisation des donn&eacute;es entre appareils</li>
+                <li class="yes-collect">&#10004; HealthKit (Apple Watch uniquement) - Pour lire les donn&eacute;es de fr&eacute;quence cardiaque</li>
+            </ul>
+
+            <h2>10. Modifications de la politique de confidentialit&eacute;</h2>
+            <p>Nous pouvons mettre &agrave; jour cette Politique de confidentialit&eacute; de temps &agrave; autre. En cas de modifications importantes, nous vous en informerons dans l'application.</p>
+
+            <h2>11. Nous contacter</h2>
+            <p>Si vous avez des questions concernant cette Politique de confidentialit&eacute; :</p>
+            <ul>
+                <li>Email : <a href="mailto:douglaswan.dev@gmail.com">douglaswan.dev@gmail.com</a></li>
+                <li>GitHub : <a href="https://github.com/Goldenmonstew/snackguard-site">github.com/Goldenmonstew/SnackGuard</a></li>
+            </ul>
+        </div>
+
+        <!-- German -->
+        <div id="lang-de" class="section">
+            <p class="date">Letzte Aktualisierung: 12. Februar 2026 | Datum des Inkrafttretens: 12. Februar 2026</p>
+
+            <h2>1. Einleitung</h2>
+            <p>Willkommen bei SnackGuard (im Folgenden &bdquo;die App&ldquo;). Wir nehmen den Schutz Ihrer Privatsph&auml;re und Ihrer pers&ouml;nlichen Daten sehr ernst. Diese Datenschutzerkl&auml;rung erl&auml;utert, wie wir Ihre Informationen erfassen, verwenden, speichern und sch&uuml;tzen.</p>
+
+            <h2>2. Informationserfassung</h2>
+
+            <h3>2.1 Informationen, die wir erfassen</h3>
+            <p><strong>Lokal gespeicherte Daten:</strong></p>
+            <ul>
+                <li><strong>Snack-Aufzeichnungen:</strong> Zeitstempel, Beschreibungen und Reflexionen Ihrer Snack-Protokolle</li>
+                <li><strong>Erfolge:</strong> Freigeschaltete Erfolge, Streak-Tage, Anzahl der Widerstands-Eintr&auml;ge und andere Statistiken</li>
+                <li><strong>App-Einstellungen:</strong> Ihre Einstellungen wie Sprache, Animationseinstellungen, t&auml;gliches Snack-Limit</li>
+            </ul>
+
+            <p><strong>Standortinformationen (optional):</strong></p>
+            <ul>
+                <li>Nur mit Ihrer Genehmigung werden grobe Standortdaten verwendet, um festzustellen, ob Sie sich in der N&auml;he von Gastst&auml;tten befinden</li>
+                <li>Wird nur f&uuml;r die lokale intelligente Erkennung verwendet, <strong>niemals auf einen Server hochgeladen</strong></li>
+            </ul>
+
+            <p><strong>Bewegungssensordaten (optional):</strong></p>
+            <ul>
+                <li>Ger&auml;te-Bewegungsdaten helfen bei der Erkennung von Essverhalten</li>
+                <li>Die gesamte Verarbeitung erfolgt lokal auf Ihrem Ger&auml;t</li>
+            </ul>
+
+            <p><strong>Gesundheitsdaten (Apple Watch):</strong></p>
+            <ul>
+                <li>Herzfrequenzdaten helfen bei der Erkennung von Essverhalten</li>
+                <li>Wird nur auf der Apple Watch verwendet, <strong>niemals mit unseren Servern synchronisiert</strong></li>
+                <li>Die gesamte Verarbeitung der Gesundheitsdaten erfolgt lokal auf Ihrem Ger&auml;t</li>
+            </ul>
+
+            <h3>2.2 Informationen, die wir NICHT erfassen</h3>
+            <ul>
+                <li class="no-collect">&#10006; Wir erfassen NICHT Ihren Namen, Ihre Telefonnummer oder E-Mail-Adresse</li>
+                <li class="no-collect">&#10006; Wir erfassen KEINE eindeutigen Ger&auml;tekennungen (IDFA/IDFV)</li>
+                <li class="no-collect">&#10006; Wir verfolgen NICHT Ihr Surfverhalten</li>
+                <li class="no-collect">&#10006; Wir verwenden KEINE Werbe- oder Analyse-SDKs von Drittanbietern</li>
+                <li class="no-collect">&#10006; Wir laden KEINE Ihrer Daten auf unsere Server hoch</li>
+            </ul>
+
+            <h2>3. Verwendung der Informationen</h2>
+            <p>Die erfassten Informationen werden ausschlie&szlig;lich f&uuml;r folgende Zwecke verwendet:</p>
+            <ul>
+                <li><strong>Kernfunktionen:</strong> Snacks aufzeichnen, Statistiken anzeigen, Erfolge freischalten</li>
+                <li><strong>Intelligente Erkennung:</strong> Intelligente Erinnerungen basierend auf Zeit, Standort und Ger&auml;testatus</li>
+                <li><strong>Datensynchronisation:</strong> Daten &uuml;ber iCloud zwischen Ihren Ger&auml;ten synchronisieren (erfordert Ihre Aktivierung)</li>
+            </ul>
+
+            <h2>4. Informationsspeicherung</h2>
+            <h3>4.1 Lokaler Speicher</h3>
+            <ul>
+                <li>Alle Daten werden zun&auml;chst lokal auf Ihrem Ger&auml;t gespeichert</li>
+                <li>Gesch&uuml;tzt durch die Standard-Verschl&uuml;sselungsmechanismen von iOS</li>
+            </ul>
+            <h3>4.2 iCloud-Synchronisation (optional)</h3>
+            <ul>
+                <li>Wenn Sie die iCloud-Synchronisation aktivieren, werden die Daten &uuml;ber Apples iCloud Key-Value Store synchronisiert</li>
+                <li>Wir haben keinen Zugriff auf die in Ihrem iCloud gespeicherten Daten</li>
+                <li>Die Synchronisation wird durch Apples Standard-iCloud-Sicherheit gesch&uuml;tzt (Verschl&uuml;sselung bei &Uuml;bertragung und Speicherung)</li>
+            </ul>
+
+            <h2>5. Informationsweitergabe</h2>
+            <div class="highlight">
+                <strong>Wir werden Ihre pers&ouml;nlichen Daten NIEMALS an Dritte weitergeben, verkaufen oder vermieten.</strong>
+            </div>
+            <p>Die einzige Ausnahme sind gesetzliche Anforderungen: zur Einhaltung von Gerichtsverfahren, Gerichtsbeschl&uuml;ssen oder beh&ouml;rdlichen Anfragen; zum Schutz der Rechte, des Eigentums oder der Sicherheit der App, unserer Nutzer oder der &Ouml;ffentlichkeit.</p>
+
+            <h2>6. Datensicherheit</h2>
+            <ul>
+                <li>Verwendung von Verschl&uuml;sselung auf iOS-Systemebene</li>
+                <li>Keine Daten&uuml;bertragung an externe Server</li>
+                <li>iCloud-Synchronisation wird durch Apples Standard-Sicherheitsmechanismen gesch&uuml;tzt</li>
+                <li>Regelm&auml;&szlig;ige App-Updates zur Behebung von Sicherheitsl&uuml;cken</li>
+            </ul>
+
+            <h2>7. Ihre Rechte</h2>
+            <ul>
+                <li><strong>Zugangsrecht:</strong> Alle Daten sind in der App einsehbar</li>
+                <li><strong>L&ouml;schrecht:</strong> Sie k&ouml;nnen jederzeit einzelne Aufzeichnungen l&ouml;schen oder alle Daten entfernen</li>
+                <li><strong>Exportrecht:</strong> Daten werden in Ihrem iCloud-Konto gespeichert und k&ouml;nnen jederzeit exportiert werden</li>
+                <li><strong>Widerrufsrecht:</strong> Sie k&ouml;nnen in den iOS-Einstellungen jederzeit die Berechtigungen f&uuml;r Standort, Bewegung und Gesundheitsdaten widerrufen</li>
+            </ul>
+
+            <h2>8. Datenschutz f&uuml;r Kinder</h2>
+            <p>Diese App ist f&uuml;r alle Altersgruppen geeignet (4+) und erfasst wissentlich keine pers&ouml;nlichen Daten von Kindern unter 13 Jahren.</p>
+
+            <h2>9. Drittanbieterdienste</h2>
+            <p>Diese App <strong>verwendet KEINE Analyse-, Werbe- oder Tracking-Dienste von Drittanbietern</strong>.</p>
+            <p>Einzige verwendete Apple-Dienste:</p>
+            <ul>
+                <li class="yes-collect">&#10004; iCloud Key-Value Store - F&uuml;r die ger&auml;te&uuml;bergreifende Datensynchronisation</li>
+                <li class="yes-collect">&#10004; HealthKit (nur Apple Watch) - Zum Lesen der Herzfrequenzdaten</li>
+            </ul>
+
+            <h2>10. &Auml;nderungen der Datenschutzerkl&auml;rung</h2>
+            <p>Wir k&ouml;nnen diese Datenschutzerkl&auml;rung von Zeit zu Zeit aktualisieren. Bei wesentlichen &Auml;nderungen werden wir Sie in der App benachrichtigen.</p>
+
+            <h2>11. Kontakt</h2>
+            <p>Wenn Sie Fragen zu dieser Datenschutzerkl&auml;rung haben:</p>
+            <ul>
+                <li>E-Mail: <a href="mailto:douglaswan.dev@gmail.com">douglaswan.dev@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/Goldenmonstew/snackguard-site">github.com/Goldenmonstew/SnackGuard</a></li>
+            </ul>
+        </div>
+
+        <!-- Spanish -->
+        <div id="lang-es" class="section">
+            <p class="date">&Uacute;ltima actualizaci&oacute;n: 12 de febrero de 2026 | Fecha de vigencia: 12 de febrero de 2026</p>
+
+            <h2>1. Introducci&oacute;n</h2>
+            <p>Bienvenido a SnackGuard (en adelante, &laquo;la Aplicaci&oacute;n&raquo;). Nos tomamos muy en serio la protecci&oacute;n de su privacidad y datos personales. Esta Pol&iacute;tica de Privacidad explica c&oacute;mo recopilamos, usamos, almacenamos y protegemos su informaci&oacute;n.</p>
+
+            <h2>2. Recopilaci&oacute;n de informaci&oacute;n</h2>
+
+            <h3>2.1 Informaci&oacute;n que recopilamos</h3>
+            <p><strong>Datos almacenados localmente:</strong></p>
+            <ul>
+                <li><strong>Registros de snacks:</strong> Marcas de tiempo, descripciones y reflexiones de sus registros de snacks</li>
+                <li><strong>Datos de logros:</strong> Logros desbloqueados, d&iacute;as consecutivos, n&uacute;mero de resistencias y otras estad&iacute;sticas</li>
+                <li><strong>Configuraci&oacute;n de la aplicaci&oacute;n:</strong> Sus preferencias como idioma, configuraci&oacute;n de animaciones, l&iacute;mite diario de snacks</li>
+            </ul>
+
+            <p><strong>Informaci&oacute;n de ubicaci&oacute;n (opcional):</strong></p>
+            <ul>
+                <li>Solo con su autorizaci&oacute;n, utiliza datos de ubicaci&oacute;n aproximada para detectar si est&aacute; cerca de establecimientos de comida</li>
+                <li>Se utiliza &uacute;nicamente para la detecci&oacute;n inteligente local, <strong>nunca se env&iacute;a a ning&uacute;n servidor</strong></li>
+            </ul>
+
+            <p><strong>Datos del sensor de movimiento (opcional):</strong></p>
+            <ul>
+                <li>Los datos de movimiento del dispositivo ayudan a detectar comportamientos alimentarios</li>
+                <li>Todo el procesamiento se realiza localmente en su dispositivo</li>
+            </ul>
+
+            <p><strong>Datos de salud (Apple Watch):</strong></p>
+            <ul>
+                <li>Los datos de frecuencia card&iacute;aca ayudan a detectar comportamientos alimentarios</li>
+                <li>Se utilizan solo en Apple Watch, <strong>nunca se sincronizan con nuestros servidores</strong></li>
+                <li>Todo el procesamiento de datos de salud se realiza localmente en su dispositivo</li>
+            </ul>
+
+            <h3>2.2 Informaci&oacute;n que NO recopilamos</h3>
+            <ul>
+                <li class="no-collect">&#10006; NO recopilamos su nombre, n&uacute;mero de tel&eacute;fono ni correo electr&oacute;nico</li>
+                <li class="no-collect">&#10006; NO recopilamos identificadores &uacute;nicos del dispositivo (IDFA/IDFV)</li>
+                <li class="no-collect">&#10006; NO rastreamos su comportamiento de navegaci&oacute;n</li>
+                <li class="no-collect">&#10006; NO utilizamos SDK de publicidad o an&aacute;lisis de terceros</li>
+                <li class="no-collect">&#10006; NO subimos ninguno de sus datos a nuestros servidores</li>
+            </ul>
+
+            <h2>3. Uso de la informaci&oacute;n</h2>
+            <p>La informaci&oacute;n recopilada se utiliza &uacute;nicamente para los siguientes fines:</p>
+            <ul>
+                <li><strong>Funciones principales:</strong> Registrar snacks, mostrar estad&iacute;sticas, desbloquear logros</li>
+                <li><strong>Detecci&oacute;n inteligente:</strong> Proporcionar recordatorios inteligentes basados en hora, ubicaci&oacute;n y estado del dispositivo</li>
+                <li><strong>Sincronizaci&oacute;n de datos:</strong> Sincronizar datos entre sus dispositivos a trav&eacute;s de iCloud (requiere su activaci&oacute;n)</li>
+            </ul>
+
+            <h2>4. Almacenamiento de informaci&oacute;n</h2>
+            <h3>4.1 Almacenamiento local</h3>
+            <ul>
+                <li>Todos los datos se almacenan primero localmente en su dispositivo</li>
+                <li>Protegidos por los mecanismos de cifrado est&aacute;ndar de iOS</li>
+            </ul>
+            <h3>4.2 Sincronizaci&oacute;n con iCloud (opcional)</h3>
+            <ul>
+                <li>Si activa la sincronizaci&oacute;n con iCloud, los datos se sincronizar&aacute;n a trav&eacute;s del servicio iCloud Key-Value Store de Apple</li>
+                <li>No podemos acceder a los datos almacenados en su iCloud</li>
+                <li>La sincronizaci&oacute;n est&aacute; protegida por la seguridad est&aacute;ndar de iCloud de Apple (cifrado en tr&aacute;nsito y en reposo)</li>
+            </ul>
+
+            <h2>5. Compartici&oacute;n de informaci&oacute;n</h2>
+            <div class="highlight">
+                <strong>NUNCA compartiremos, venderemos ni alquilaremos su informaci&oacute;n personal a terceros.</strong>
+            </div>
+            <p>La &uacute;nica excepci&oacute;n son los requisitos legales: para cumplir con procesos legales, &oacute;rdenes judiciales o solicitudes gubernamentales; para proteger los derechos, la propiedad o la seguridad de la Aplicaci&oacute;n, nuestros usuarios o el p&uacute;blico.</p>
+
+            <h2>6. Seguridad de los datos</h2>
+            <ul>
+                <li>Uso de cifrado a nivel de sistema iOS</li>
+                <li>No se transmiten datos a servidores externos</li>
+                <li>La sincronizaci&oacute;n con iCloud est&aacute; protegida por los mecanismos de seguridad est&aacute;ndar de Apple</li>
+                <li>Actualizaciones peri&oacute;dicas de la aplicaci&oacute;n para corregir vulnerabilidades de seguridad</li>
+            </ul>
+
+            <h2>7. Sus derechos</h2>
+            <ul>
+                <li><strong>Acceso:</strong> Todos los datos son visibles dentro de la aplicaci&oacute;n</li>
+                <li><strong>Eliminaci&oacute;n:</strong> Puede eliminar registros individuales o borrar todos los datos en cualquier momento</li>
+                <li><strong>Exportaci&oacute;n:</strong> Los datos se almacenan en su cuenta de iCloud y se pueden exportar en cualquier momento</li>
+                <li><strong>Revocaci&oacute;n:</strong> Puede revocar los permisos de ubicaci&oacute;n, movimiento y datos de salud en Ajustes de iOS en cualquier momento</li>
+            </ul>
+
+            <h2>8. Privacidad de los menores</h2>
+            <p>Esta aplicaci&oacute;n es apta para todas las edades (4+) y no recopila deliberadamente informaci&oacute;n personal de menores de 13 a&ntilde;os.</p>
+
+            <h2>9. Servicios de terceros</h2>
+            <p>Esta aplicaci&oacute;n <strong>NO utiliza ning&uacute;n servicio de an&aacute;lisis, publicidad o rastreo de terceros</strong>.</p>
+            <p>&Uacute;nicos servicios de Apple utilizados:</p>
+            <ul>
+                <li class="yes-collect">&#10004; iCloud Key-Value Store - Para la sincronizaci&oacute;n de datos entre dispositivos</li>
+                <li class="yes-collect">&#10004; HealthKit (solo Apple Watch) - Para leer datos de frecuencia card&iacute;aca</li>
+            </ul>
+
+            <h2>10. Cambios en la pol&iacute;tica de privacidad</h2>
+            <p>Podemos actualizar esta Pol&iacute;tica de Privacidad de vez en cuando. En caso de cambios significativos, se lo notificaremos dentro de la aplicaci&oacute;n.</p>
+
+            <h2>11. Cont&aacute;ctenos</h2>
+            <p>Si tiene alguna pregunta sobre esta Pol&iacute;tica de Privacidad:</p>
+            <ul>
+                <li>Email: <a href="mailto:douglaswan.dev@gmail.com">douglaswan.dev@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/Goldenmonstew/snackguard-site">github.com/Goldenmonstew/SnackGuard</a></li>
+            </ul>
+        </div>
+
         <div class="footer">
             <p>&copy; 2026 SnackGuard. All rights reserved.</p>
             <p><a href="mailto:douglaswan.dev@gmail.com">douglaswan.dev@gmail.com</a></p>
@@ -439,6 +884,10 @@
             if (saved && document.getElementById('lang-' + saved)) { switchLang(saved); return; }
             var b = (navigator.language || '').toLowerCase();
             if (b.startsWith('ja')) switchLang('ja');
+            else if (b.startsWith('ko')) switchLang('ko');
+            else if (b.startsWith('fr')) switchLang('fr');
+            else if (b.startsWith('de')) switchLang('de');
+            else if (b.startsWith('es')) switchLang('es');
             else if (b.startsWith('zh')) switchLang('zh');
             else switchLang('en');
         })();

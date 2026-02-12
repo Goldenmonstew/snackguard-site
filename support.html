@@ -26,6 +26,7 @@
             justify-content: center;
             gap: 12px;
             margin-top: 20px;
+            flex-wrap: wrap;
         }
         .lang-switch a {
             color: #fff;
@@ -114,7 +115,12 @@
         <p>Help & FAQ / 帮助与常见问题</p>
         <div class="lang-switch">
             <a onclick="switchLang('zh')" id="btn-zh" class="active">中文</a>
-            <a onclick="switchLang('en')" id="btn-en">English</a>
+            <a onclick="switchLang('en')" id="btn-en">EN</a>
+            <a onclick="switchLang('ja')" id="btn-ja">日本語</a>
+            <a onclick="switchLang('ko')" id="btn-ko">한국어</a>
+            <a onclick="switchLang('fr')" id="btn-fr">FR</a>
+            <a onclick="switchLang('de')" id="btn-de">DE</a>
+            <a onclick="switchLang('es')" id="btn-es">ES</a>
         </div>
     </div>
 
@@ -225,6 +231,271 @@
             </div>
         </div>
 
+        <!-- Japanese -->
+        <div id="lang-ja" class="section">
+            <div class="contact-card">
+                <h2>お問い合わせ</h2>
+                <p>SnackGuard のご利用中に問題が発生した場合や、機能に関するご要望がございましたら、メールにてお問い合わせください。できるだけ早くご返信いたします。</p>
+                <a href="mailto:douglaswan.dev@gmail.com?subject=SnackGuard%20フィードバック" class="email-btn">メールでフィードバックを送信</a>
+            </div>
+
+            <div class="contact-card">
+                <h2>よくある質問</h2>
+
+                <div class="faq-item">
+                    <h3>SnackGuard はどのようにおやつを検知しますか？</h3>
+                    <p>SnackGuard はマルチシグナル融合技術を使用しています。時間パターン（よくあるおやつの時間帯）、位置情報（飲食エリアへの近接度）、デバイスのモーション、Apple Watch の心拍数と手首の動きデータを組み合わせ、ベイズアルゴリズムですべての信号をデバイス上でローカルに処理します。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Apple Watch は必要ですか？</h3>
+                    <p>いいえ。iPhone だけですべてのコア機能をご利用いただけます。Apple Watch は検知精度の向上（心拍数と手首のモーション）に役立ちますが、必須ではありません。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>データは安全ですか？</h3>
+                    <p>もちろん安全です。すべてのデータはお使いのデバイスにのみローカル保存されます。サードパーティ SDK は一切使用せず、個人情報の収集やサーバーへのデータ送信は行いません。iCloud 同期はオプションであり、Apple のエンドツーエンド暗号化で保護されています。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>複数デバイス間でデータを同期するには？</h3>
+                    <p>設定を開き、「iCloud 同期」を有効にしてください。おやつの記録、実績、設定が同じ Apple ID でサインインしているすべてのデバイス間で自動的に同期されます。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>言語を変更するには？</h3>
+                    <p>設定を開き、お好みの言語を選択してください。SnackGuard は 33 言語に対応しており、変更は即座に反映されます。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>リマインダーが多すぎる/少なすぎる場合は？</h3>
+                    <p>SnackGuard の検知アルゴリズムは自動的に学習・適応します。設定で 1 日のおやつ許容量やリマインダースタイル（やさしい/ユーモア/厳格）を調整できます。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>データを削除するには？</h3>
+                    <p>設定ページの下部にある「すべてのデータを消去」から削除できます。ローカルおよび iCloud のすべての記録が削除されます。この操作は元に戻せません。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>アプリにインターネット接続は必要ですか？</h3>
+                    <p>いいえ。SnackGuard はアカウント不要で完全にオフラインで動作します。ネットワーク接続が必要なのは iCloud 同期機能のみです。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Korean -->
+        <div id="lang-ko" class="section">
+            <div class="contact-card">
+                <h2>문의하기</h2>
+                <p>SnackGuard 사용 중 문제가 발생하거나 기능 제안이 있으시면 이메일로 연락해 주세요. 최대한 빠르게 답변드리겠습니다.</p>
+                <a href="mailto:douglaswan.dev@gmail.com?subject=SnackGuard%20피드백" class="email-btn">이메일 피드백 보내기</a>
+            </div>
+
+            <div class="contact-card">
+                <h2>자주 묻는 질문</h2>
+
+                <div class="faq-item">
+                    <h3>SnackGuard는 간식 먹는 것을 어떻게 감지하나요?</h3>
+                    <p>SnackGuard는 다중 신호 융합 기술을 사용합니다. 시간 패턴(일반적인 간식 시간대), 위치(음식 구역 근접도), 기기 모션, Apple Watch 심박수 및 손목 움직임 데이터를 결합하여 베이즈 알고리즘으로 모든 신호를 기기에서 로컬로 처리합니다.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Apple Watch가 필요한가요?</h3>
+                    <p>아니요. iPhone만으로 모든 핵심 기능을 사용할 수 있습니다. Apple Watch는 추가 감지 정확도(심박수 및 손목 모션)를 제공하지만 필수는 아닙니다.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>제 데이터는 안전한가요?</h3>
+                    <p>물론입니다. 모든 데이터는 사용자의 기기에만 로컬로 저장됩니다. 서드파티 SDK를 사용하지 않으며, 개인 정보를 수집하거나 서버에 데이터를 업로드하지 않습니다. iCloud 동기화는 선택 사항이며 Apple의 종단 간 암호화로 보호됩니다.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>여러 기기 간에 데이터를 동기화하려면 어떻게 하나요?</h3>
+                    <p>설정으로 이동하여 "iCloud 동기화"를 활성화하세요. 간식 기록, 업적, 설정이 동일한 Apple ID로 로그인된 모든 기기에서 자동으로 동기화됩니다.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>언어를 변경하려면 어떻게 하나요?</h3>
+                    <p>설정을 열고 원하는 언어를 선택하세요. SnackGuard는 33개 언어를 지원하며 변경 사항은 즉시 적용됩니다.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>알림이 너무 자주/너무 적게 옵니다</h3>
+                    <p>SnackGuard의 감지 알고리즘은 자동으로 학습하고 적응합니다. 설정에서 일일 간식 허용량과 알림 스타일(부드러움/유머/엄격)을 조정할 수 있습니다.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>데이터를 삭제하려면 어떻게 하나요?</h3>
+                    <p>설정 페이지 하단에서 "모든 데이터 삭제"를 찾으세요. 로컬 및 iCloud의 모든 기록이 삭제됩니다. 이 작업은 되돌릴 수 없습니다.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>앱에 인터넷 연결이 필요한가요?</h3>
+                    <p>아니요. SnackGuard는 계정 없이 완전히 오프라인으로 작동합니다. 네트워크 접속이 필요한 것은 iCloud 동기화 기능뿐입니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- French -->
+        <div id="lang-fr" class="section">
+            <div class="contact-card">
+                <h2>Nous contacter</h2>
+                <p>Si vous rencontrez un probleme lors de l'utilisation de SnackGuard ou si vous avez des suggestions de fonctionnalites, veuillez nous contacter par e-mail. Nous vous repondrons dans les plus brefs delais.</p>
+                <a href="mailto:douglaswan.dev@gmail.com?subject=SnackGuard%20Commentaires" class="email-btn">Envoyer un e-mail</a>
+            </div>
+
+            <div class="contact-card">
+                <h2>Questions frequentes</h2>
+
+                <div class="faq-item">
+                    <h3>Comment SnackGuard detecte-t-il le grignotage ?</h3>
+                    <p>SnackGuard utilise la fusion multi-signaux : combinant les modeles temporels (heures de grignotage courantes), la localisation (proximite des zones de restauration), le mouvement de l'appareil, ainsi que les donnees de frequence cardiaque et de mouvement du poignet de l'Apple Watch. Un algorithme bayesien traite tous les signaux localement sur votre appareil.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Ai-je besoin d'une Apple Watch ?</h3>
+                    <p>Non. L'iPhone seul offre toutes les fonctionnalites principales. L'Apple Watch ajoute une precision de detection supplementaire (frequence cardiaque et mouvement du poignet) mais n'est pas obligatoire.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Mes donnees sont-elles en securite ?</h3>
+                    <p>Absolument. Toutes les donnees sont stockees uniquement en local sur votre appareil. Nous n'utilisons aucun SDK tiers, ne collectons aucune information personnelle et ne transferons aucune donnee vers un serveur. La synchronisation iCloud est facultative et protegee par le chiffrement de bout en bout d'Apple.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Comment synchroniser les donnees entre plusieurs appareils ?</h3>
+                    <p>Allez dans Reglages et activez la « Synchronisation iCloud ». Vos enregistrements de grignotage, vos succes et vos parametres seront automatiquement synchronises sur tous les appareils connectes avec le meme identifiant Apple.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Comment changer la langue ?</h3>
+                    <p>Ouvrez les Reglages et selectionnez la langue de votre choix. SnackGuard prend en charge 33 langues et le changement prend effet immediatement.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Les rappels sont trop frequents / trop rares ?</h3>
+                    <p>L'algorithme de detection de SnackGuard apprend et s'adapte automatiquement. Vous pouvez ajuster votre limite quotidienne de grignotage et le style de rappel (Doux / Humoristique / Strict) dans les Reglages.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Comment supprimer mes donnees ?</h3>
+                    <p>Trouvez « Effacer toutes les donnees » en bas de la page Reglages. Cela supprime tous les enregistrements locaux et iCloud. Cette action est irreversible.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>L'application necessite-t-elle une connexion Internet ?</h3>
+                    <p>Non. SnackGuard fonctionne entierement hors ligne sans compte requis. Seule la fonctionnalite de synchronisation iCloud necessite un acces reseau.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- German -->
+        <div id="lang-de" class="section">
+            <div class="contact-card">
+                <h2>Kontakt</h2>
+                <p>Wenn Sie bei der Nutzung von SnackGuard auf Probleme stossen oder Funktionsvorschlaege haben, kontaktieren Sie uns bitte per E-Mail. Wir antworten so schnell wie moeglich.</p>
+                <a href="mailto:douglaswan.dev@gmail.com?subject=SnackGuard%20Feedback" class="email-btn">Feedback per E-Mail senden</a>
+            </div>
+
+            <div class="contact-card">
+                <h2>Haeufig gestellte Fragen</h2>
+
+                <div class="faq-item">
+                    <h3>Wie erkennt SnackGuard das Snacken?</h3>
+                    <p>SnackGuard verwendet Multi-Signal-Fusion: Es kombiniert Zeitmuster (typische Snack-Zeiten), Standort (Naehe zu Essensbereichen), Geraetebewegung sowie Herzfrequenz- und Handgelenkbewegungsdaten der Apple Watch. Ein Bayes-Algorithmus verarbeitet alle Signale lokal auf Ihrem Geraet.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Brauche ich eine Apple Watch?</h3>
+                    <p>Nein. Das iPhone allein bietet alle Kernfunktionen. Die Apple Watch erhoet die Erkennungsgenauigkeit (Herzfrequenz und Handgelenkbewegung), ist aber nicht erforderlich.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Sind meine Daten sicher?</h3>
+                    <p>Absolut. Alle Daten werden ausschliesslich lokal auf Ihrem Geraet gespeichert. Wir verwenden keine Drittanbieter-SDKs, erfassen keine persoenlichen Daten und laden keine Daten auf Server hoch. Die iCloud-Synchronisierung ist optional und durch Apples Ende-zu-Ende-Verschluesselung geschuetzt.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Wie synchronisiere ich Daten zwischen Geraeten?</h3>
+                    <p>Gehen Sie zu Einstellungen und aktivieren Sie die „iCloud-Synchronisierung". Ihre Snack-Aufzeichnungen, Erfolge und Einstellungen werden automatisch auf allen Geraeten synchronisiert, die mit derselben Apple-ID angemeldet sind.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Wie aendere ich die Sprache?</h3>
+                    <p>Oeffnen Sie die Einstellungen und waehlen Sie Ihre bevorzugte Sprache. SnackGuard unterstuetzt 33 Sprachen und die Aenderung wird sofort wirksam.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Erinnerungen kommen zu haeufig / zu selten?</h3>
+                    <p>Der Erkennungsalgorithmus von SnackGuard lernt und passt sich automatisch an. Sie koennen Ihr taegliches Snack-Limit und den Erinnerungsstil (Sanft / Humorvoll / Streng) in den Einstellungen anpassen.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Wie loesche ich meine Daten?</h3>
+                    <p>Finden Sie „Alle Daten loeschen" am Ende der Einstellungsseite. Dies loescht alle lokalen und iCloud-Aufzeichnungen. Diese Aktion kann nicht rueckgaengig gemacht werden.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Benoetigt die App eine Internetverbindung?</h3>
+                    <p>Nein. SnackGuard funktioniert vollstaendig offline ohne Kontoanmeldung. Nur die iCloud-Synchronisierungsfunktion benoetigt Netzwerkzugriff.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spanish -->
+        <div id="lang-es" class="section">
+            <div class="contact-card">
+                <h2>Contacto</h2>
+                <p>Si encuentras algun problema al usar SnackGuard o tienes sugerencias de funciones, contactanos por correo electronico. Te responderemos lo antes posible.</p>
+                <a href="mailto:douglaswan.dev@gmail.com?subject=SnackGuard%20Comentarios" class="email-btn">Enviar correo de comentarios</a>
+            </div>
+
+            <div class="contact-card">
+                <h2>Preguntas frecuentes</h2>
+
+                <div class="faq-item">
+                    <h3>Como detecta SnackGuard que estoy comiendo snacks?</h3>
+                    <p>SnackGuard utiliza fusion de multiples senales: combina patrones de tiempo (horarios comunes de snacks), ubicacion (proximidad a zonas de comida), movimiento del dispositivo y datos de frecuencia cardiaca y movimiento de muneca del Apple Watch. Un algoritmo bayesiano procesa todas las senales localmente en tu dispositivo.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Necesito un Apple Watch?</h3>
+                    <p>No. El iPhone por si solo ofrece todas las funciones principales. El Apple Watch anade precision adicional de deteccion (frecuencia cardiaca y movimiento de muneca) pero no es obligatorio.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Estan seguros mis datos?</h3>
+                    <p>Absolutamente. Todos los datos se almacenan unicamente de forma local en tu dispositivo. No usamos SDKs de terceros, no recopilamos informacion personal ni subimos datos a ningun servidor. La sincronizacion con iCloud es opcional y esta protegida por el cifrado de extremo a extremo de Apple.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Como sincronizo datos entre dispositivos?</h3>
+                    <p>Ve a Ajustes y activa "Sincronizacion iCloud". Tus registros de snacks, logros y ajustes se sincronizaran automaticamente en todos los dispositivos con el mismo ID de Apple.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Como cambio el idioma?</h3>
+                    <p>Abre Ajustes y selecciona tu idioma preferido. SnackGuard es compatible con 33 idiomas y el cambio se aplica de inmediato.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Los recordatorios son demasiado frecuentes / demasiado escasos?</h3>
+                    <p>El algoritmo de deteccion de SnackGuard aprende y se adapta automaticamente. Puedes ajustar tu limite diario de snacks y el estilo de recordatorio (Suave / Humoristico / Estricto) en Ajustes.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Como elimino mis datos?</h3>
+                    <p>Busca "Borrar todos los datos" en la parte inferior de la pagina de Ajustes. Esto elimina todos los registros locales y de iCloud. Esta accion no se puede deshacer.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>La aplicacion requiere conexion a Internet?</h3>
+                    <p>No. SnackGuard funciona completamente sin conexion y sin necesidad de crear una cuenta. Solo la funcion de sincronizacion con iCloud necesita acceso a la red.</p>
+                </div>
+            </div>
+        </div>
+
         <div class="footer">
             <p><a href="index.html">Home</a> &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="mailto:douglaswan.dev@gmail.com">Contact</a></p>
             <p style="margin-top: 12px;">&copy; 2026 SnackGuard. All rights reserved.</p>
@@ -243,7 +514,13 @@
             var saved = localStorage.getItem('sg-lang');
             if (saved && document.getElementById('lang-' + saved)) { switchLang(saved); return; }
             var b = (navigator.language || '').toLowerCase();
-            switchLang(b.startsWith('zh') ? 'zh' : 'en');
+            if (b.startsWith('zh')) { switchLang('zh'); }
+            else if (b.startsWith('ja')) { switchLang('ja'); }
+            else if (b.startsWith('ko')) { switchLang('ko'); }
+            else if (b.startsWith('fr')) { switchLang('fr'); }
+            else if (b.startsWith('de')) { switchLang('de'); }
+            else if (b.startsWith('es')) { switchLang('es'); }
+            else { switchLang('en'); }
         })();
     </script>
 </body>
