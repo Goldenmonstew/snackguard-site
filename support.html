@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnackGuard - Support / 支持</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            line-height: 1.7;
+            color: #1d1d1f;
+            background: #f5f5f7;
+        }
+        .header {
+            background: linear-gradient(135deg, #0a2e14 0%, #1a4a2e 100%);
+            color: #fff;
+            text-align: center;
+            padding: 48px 24px 40px;
+        }
+        .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 15px; opacity: 0.8; }
+        .container { max-width: 720px; margin: 0 auto; padding: 32px 24px 64px; }
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .lang-switch a {
+            color: #fff;
+            text-decoration: none;
+            padding: 6px 16px;
+            border: 1px solid rgba(255,255,255,0.4);
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .lang-switch a:hover, .lang-switch a.active {
+            background: rgba(255,255,255,0.2);
+            border-color: #fff;
+        }
+        .section { display: none; }
+        .section.active { display: block; }
+
+        .contact-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        .contact-card h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        .contact-card p {
+            font-size: 15px;
+            color: #424245;
+            margin-bottom: 12px;
+        }
+        .contact-card a {
+            color: #06c;
+            text-decoration: none;
+        }
+        .contact-card a:hover { text-decoration: underline; }
+        .email-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #0DF259 0%, #0ab844 100%);
+            color: #fff;
+            font-weight: 600;
+            font-size: 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            margin-top: 8px;
+            transition: transform 0.2s;
+        }
+        .email-btn:hover { transform: scale(1.03); text-decoration: none; }
+
+        .faq-item {
+            border-bottom: 1px solid #e5e5e7;
+            padding: 20px 0;
+        }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1d1d1f;
+        }
+        .faq-item p {
+            font-size: 15px;
+            color: #6e6e73;
+            line-height: 1.6;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 13px;
+            color: #86868b;
+            border-top: 1px solid #d2d2d7;
+            margin-top: 48px;
+        }
+        .footer a { color: #06c; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>SnackGuard Support</h1>
+        <p>Help & FAQ / 帮助与常见问题</p>
+        <div class="lang-switch">
+            <a onclick="switchLang('zh')" id="btn-zh" class="active">中文</a>
+            <a onclick="switchLang('en')" id="btn-en">English</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Chinese -->
+        <div id="lang-zh" class="section active">
+            <div class="contact-card">
+                <h2>联系我们</h2>
+                <p>如果你在使用 SnackGuard 时遇到任何问题，或有功能建议，请通过邮件联系我们，我们会尽快回复。</p>
+                <a href="mailto:douglaswan.dev@gmail.com?subject=SnackGuard%20反馈" class="email-btn">发送邮件反馈</a>
+            </div>
+
+            <div class="contact-card">
+                <h2>常见问题</h2>
+
+                <div class="faq-item">
+                    <h3>SnackGuard 如何检测我在吃零食？</h3>
+                    <p>SnackGuard 使用多信号融合技术：结合时间模式（常见零食时段）、位置（是否靠近餐饮区域）、设备运动状态、以及 Apple Watch 的心率和手腕动作数据，通过贝叶斯算法综合判断。所有处理均在设备本地完成。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>需要 Apple Watch 才能使用吗？</h3>
+                    <p>不需要。iPhone 单独即可使用所有核心功能。Apple Watch 可以提供额外的检测精度（心率和手腕动作），但不是必须的。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>我的数据安全吗？</h3>
+                    <p>绝对安全。所有数据仅存储在你的设备本地。我们不使用任何第三方 SDK，不收集个人信息，不上传任何数据到服务器。iCloud 同步是可选的，且由 Apple 的端到端加密保护。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>如何在多设备间同步数据？</h3>
+                    <p>打开设置 → 开启「iCloud 同步」。你的零食记录、成就、设置会自动通过 iCloud 在所有登录同一 Apple ID 的设备间同步。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>如何更换语言？</h3>
+                    <p>打开设置页面，在「语言」选项中选择你想要的语言。SnackGuard 支持 33 种语言，切换后会立即生效。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>提醒太频繁/太少怎么办？</h3>
+                    <p>SnackGuard 的检测算法会自动学习和适应。如果你觉得提醒不合适，可以在设置中调整每日零食额度和提醒风格（温和/幽默/严格）。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>如何删除我的数据？</h3>
+                    <p>在设置页面底部可以找到「清除所有数据」选项。这会删除所有本地和 iCloud 中的记录。此操作不可撤销。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>应用需要网络连接吗？</h3>
+                    <p>不需要。SnackGuard 完全离线可用，无需注册账号。只有 iCloud 同步功能需要网络。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- English -->
+        <div id="lang-en" class="section">
+            <div class="contact-card">
+                <h2>Contact Us</h2>
+                <p>If you encounter any issues while using SnackGuard, or have feature suggestions, please contact us via email. We'll respond as soon as possible.</p>
+                <a href="mailto:douglaswan.dev@gmail.com?subject=SnackGuard%20Feedback" class="email-btn">Send Email Feedback</a>
+            </div>
+
+            <div class="contact-card">
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="faq-item">
+                    <h3>How does SnackGuard detect snacking?</h3>
+                    <p>SnackGuard uses multi-signal fusion: combining time patterns (common snack times), location (proximity to food areas), device motion, and Apple Watch heart rate and wrist movement data. A Bayesian algorithm processes all signals locally on your device.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do I need an Apple Watch?</h3>
+                    <p>No. iPhone alone provides all core features. Apple Watch adds extra detection accuracy (heart rate and wrist motion) but is not required.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Is my data safe?</h3>
+                    <p>Absolutely. All data is stored locally on your device only. We use no third-party SDKs, collect no personal information, and upload no data to any server. iCloud sync is optional and protected by Apple's end-to-end encryption.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do I sync data across devices?</h3>
+                    <p>Go to Settings and enable "iCloud Sync". Your snack records, achievements, and settings will automatically sync across all devices signed in with the same Apple ID.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do I change the language?</h3>
+                    <p>Open Settings and select your preferred language. SnackGuard supports 33 languages and the change takes effect immediately.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Reminders are too frequent / too rare?</h3>
+                    <p>SnackGuard's detection algorithm automatically learns and adapts. You can adjust your daily snack allowance and reminder style (Gentle / Humorous / Strict) in Settings.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do I delete my data?</h3>
+                    <p>Find "Clear All Data" at the bottom of the Settings page. This deletes all local and iCloud records. This action cannot be undone.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Does the app require an internet connection?</h3>
+                    <p>No. SnackGuard works fully offline with no account required. Only the iCloud sync feature needs network access.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><a href="index.html">Home</a> &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="mailto:douglaswan.dev@gmail.com">Contact</a></p>
+            <p style="margin-top: 12px;">&copy; 2026 SnackGuard. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.lang-switch a').forEach(a => a.classList.remove('active'));
+            document.getElementById('lang-' + lang).classList.add('active');
+            document.getElementById('btn-' + lang).classList.add('active');
+        }
+    </script>
+</body>
+</html>
