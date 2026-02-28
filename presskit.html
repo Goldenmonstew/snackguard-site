@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnackGuard - Press Kit</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+            color: #1d1d1f; background: #f5f5f7; line-height: 1.7;
+        }
+        .header {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: #fff; text-align: center; padding: 80px 24px;
+        }
+        .header .logo { width: 100px; height: 100px; background: linear-gradient(135deg, #0DF259, #0ab844); border-radius: 24px; display: inline-flex; align-items: center; justify-content: center; font-size: 48px; margin-bottom: 24px; box-shadow: 0 0 40px rgba(13,242,89,0.3); }
+        .header h1 { font-size: 48px; font-weight: 700; margin-bottom: 8px; }
+        .header p { font-size: 20px; color: rgba(255,255,255,0.6); }
+        .container { max-width: 800px; margin: 0 auto; padding: 48px 24px; }
+        .lang-toggle { text-align: center; margin: 32px 0; display: flex; justify-content: center; gap: 8px; }
+        .lang-toggle button { padding: 8px 20px; border: 1px solid #d2d2d7; border-radius: 20px; background: #fff; cursor: pointer; font-size: 14px; transition: all 0.2s; }
+        .lang-toggle button:hover, .lang-toggle button.active { background: #1d1d1f; color: #fff; border-color: #1d1d1f; }
+        section { background: #fff; border-radius: 16px; padding: 32px; margin-bottom: 24px; }
+        section h2 { font-size: 24px; font-weight: 700; margin-bottom: 16px; color: #1d1d1f; border-bottom: 2px solid #0DF259; padding-bottom: 8px; display: inline-block; }
+        .fact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-top: 16px; }
+        .fact-card { background: #f5f5f7; border-radius: 12px; padding: 20px; text-align: center; }
+        .fact-card .value { font-size: 28px; font-weight: 700; color: #0ab844; }
+        .fact-card .label { font-size: 13px; color: #6e6e73; margin-top: 4px; }
+        .feature-list { list-style: none; padding: 0; }
+        .feature-list li { padding: 12px 0; border-bottom: 1px solid #f0f0f0; font-size: 15px; }
+        .feature-list li:last-child { border: none; }
+        .feature-list li strong { color: #1d1d1f; }
+        .copy-block { background: #f5f5f7; border-radius: 12px; padding: 20px; margin: 12px 0; position: relative; }
+        .copy-block p { font-size: 15px; color: #424245; white-space: pre-wrap; }
+        .copy-btn { position: absolute; top: 12px; right: 12px; padding: 6px 14px; border: 1px solid #d2d2d7; border-radius: 8px; background: #fff; cursor: pointer; font-size: 12px; }
+        .copy-btn:hover { background: #1d1d1f; color: #fff; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+        .contact-card { background: #f5f5f7; border-radius: 12px; padding: 20px; }
+        .contact-card h3 { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+        .contact-card p { font-size: 14px; color: #6e6e73; }
+        .contact-card a { color: #0ab844; text-decoration: none; }
+        .badge { display: inline-block; padding: 10px 24px; background: #1d1d1f; color: #fff; border-radius: 10px; font-size: 15px; font-weight: 600; text-decoration: none; margin-top: 16px; transition: transform 0.2s; }
+        .badge:hover { transform: scale(1.05); }
+        footer { text-align: center; padding: 32px 24px; font-size: 13px; color: #6e6e73; }
+        footer a { color: #0ab844; text-decoration: none; }
+        [data-lang] { display: none; }
+        [data-lang].active { display: block; }
+        li[data-lang].active { display: list-item; }
+        span[data-lang].active { display: inline; }
+        @media (max-width: 600px) {
+            .header h1 { font-size: 32px; }
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">🛡️</div>
+        <h1>SnackGuard Press Kit</h1>
+        <p>Everything you need to cover SnackGuard</p>
+    </div>
+
+    <div class="container">
+        <div class="lang-toggle">
+            <button onclick="switchLang('en')" id="btn-en">English</button>
+            <button onclick="switchLang('zh')" id="btn-zh">中文</button>
+        </div>
+
+        <!-- Quick Facts -->
+        <section>
+            <h2 data-lang="en">Quick Facts</h2>
+            <h2 data-lang="zh">基本信息</h2>
+            <div class="fact-grid">
+                <div class="fact-card"><div class="value">Free</div><div class="label">Core Features</div></div>
+                <div class="fact-card"><div class="value">533</div><div class="label">Achievements</div></div>
+                <div class="fact-card"><div class="value">33</div><div class="label">Languages</div></div>
+                <div class="fact-card"><div class="value">iOS + watchOS</div><div class="label">Platforms</div></div>
+            </div>
+        </section>
+
+        <!-- Short Description -->
+        <section>
+            <h2 data-lang="en">Short Description</h2>
+            <h2 data-lang="zh">短介绍</h2>
+            <div data-lang="en">
+                <div class="copy-block">
+                    <button class="copy-btn" onclick="copyText(this)">Copy</button>
+                    <p>SnackGuard uses AI-powered detection to know when you're snacking — and helps you stop. With Apple Watch motion sensing, Bayesian signal fusion, and 533 unlockable achievements, it turns snack reduction into a rewarding challenge.</p>
+                </div>
+            </div>
+            <div data-lang="zh">
+                <div class="copy-block">
+                    <button class="copy-btn" onclick="copyText(this)">复制</button>
+                    <p>SnackGuard 利用 AI 检测技术感知你的零食行为，帮助你减少零食摄入。结合 Apple Watch 手势检测、贝叶斯信号融合和 533 个可解锁成就，把控制零食变成一场有趣的挑战。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Long Description -->
+        <section>
+            <h2 data-lang="en">Full Description</h2>
+            <h2 data-lang="zh">完整介绍</h2>
+            <div data-lang="en">
+                <div class="copy-block">
+                    <button class="copy-btn" onclick="copyText(this)">Copy</button>
+                    <p>SnackGuard is an intelligent snack monitoring app for iPhone and Apple Watch that helps you build healthier eating habits — not by counting calories, but by building awareness.
+
+The app uses a dual-detection system powered by Bayesian inference, fusing 6+ signals including accelerometer data, phone usage patterns, time-of-day analysis, location proximity, Apple Watch wrist motion, and heart rate monitoring. When it detects you're likely snacking, it sends a personalized reminder in one of three coaching styles: Gentle, Humorous, or Strict.
+
+Every time you resist a craving, you're rewarded with a procedurally generated celebration — over 125 billion unique combinations with gyroscope-reactive 3D effects, making each moment of willpower feel special.
+
+Track your progress with detailed analytics including weekly trends, snack hotspot maps, eating reason breakdowns, and risk-hour analysis. A comprehensive achievement system offers 533 badges across 8 categories and 5 rarity tiers, from Common to Legendary.
+
+Built with privacy at its core: no accounts, no tracking, no ads, no third-party SDKs. All data stays on your device with optional iCloud sync. Available in 33 languages.</p>
+                </div>
+            </div>
+            <div data-lang="zh">
+                <div class="copy-block">
+                    <button class="copy-btn" onclick="copyText(this)">复制</button>
+                    <p>SnackGuard 是一款面向 iPhone 和 Apple Watch 的智能零食监控 App，帮你养成更健康的饮食习惯——不计算卡路里，而是建立自我觉察。
+
+App 使用基于贝叶斯推理的双重检测系统，融合 6 种以上信号，包括加速度计数据、手机使用模式、时间规律、地理位置、Apple Watch 手腕动作和心率监测。当检测到你可能在吃零食时，会以三种风格之一发送提醒：温柔型、幽默型或严格型。
+
+每次你成功抵抗诱惑，都会获得一个独一无二的庆祝动画——超过 1250 亿种组合，支持陀螺仪驱动的 3D 效果，让每一次意志力的胜利都有仪式感。
+
+通过详细的数据分析追踪进步，包括每周趋势、零食热点地图、进食原因分析和风险时段预测。完整的成就系统提供 533 个徽章，横跨 8 大类别和 5 个稀有度等级，从普通到传奇。
+
+隐私至上：无需账号、无追踪、无广告、无第三方 SDK。所有数据留在你的设备上，可选 iCloud 同步。支持 33 种语言。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features -->
+        <section>
+            <h2 data-lang="en">Key Features</h2>
+            <h2 data-lang="zh">核心特性</h2>
+            <ul class="feature-list">
+                <li data-lang="en"><strong>AI Snacking Detection</strong> — Bayesian fusion of 6+ signals detects snacking behavior in real-time</li>
+                <li data-lang="en"><strong>Apple Watch Companion</strong> — Wrist motion detection, hand-to-mouth gesture recognition, heart rate monitoring</li>
+                <li data-lang="en"><strong>125 Billion+ Unique Celebrations</strong> — Procedurally generated rewards with gyroscope-reactive 3D effects</li>
+                <li data-lang="en"><strong>533 Achievements</strong> — 8 categories, 5 rarity tiers (Common → Legendary)</li>
+                <li data-lang="en"><strong>Mindful Reflection</strong> — Log why you snack (12 reasons) with personalized suggestions</li>
+                <li data-lang="en"><strong>3 Coaching Styles</strong> — Gentle, Humorous, or Strict reminder personalities</li>
+                <li data-lang="en"><strong>Snack Hotspot Map</strong> — Location heatmap of where you snack most</li>
+                <li data-lang="en"><strong>Weather-Reactive UI</strong> — Real-time rain, snow, aurora effects based on actual weather</li>
+                <li data-lang="en"><strong>7 Ambient Themes</strong> — Sparkle, Firefly, Cherry Blossom, Meteor, Aurora, Bubbles, Matrix Rain</li>
+                <li data-lang="en"><strong>4 Widget Types</strong> — Home screen and Lock Screen widgets with quick actions</li>
+                <li data-lang="en"><strong>33 Languages</strong> — Full localization including in-app language switching</li>
+                <li data-lang="en"><strong>Privacy-First</strong> — No accounts, no tracking, no ads, no third-party SDKs</li>
+
+                <li data-lang="zh"><strong>AI 零食检测</strong> — 贝叶斯融合 6+ 信号，实时检测零食行为</li>
+                <li data-lang="zh"><strong>Apple Watch 联动</strong> — 手腕动作检测、进食手势识别、心率监测</li>
+                <li data-lang="zh"><strong>1250 亿+独特庆祝</strong> — 陀螺仪驱动的 3D 效果，程序化生成</li>
+                <li data-lang="zh"><strong>533 个成就</strong> — 8 大类别、5 个稀有度等级（普通→传奇）</li>
+                <li data-lang="zh"><strong>正念反思</strong> — 记录进食原因（12 种），获取个性化建议</li>
+                <li data-lang="zh"><strong>3 种提醒风格</strong> — 温柔型、幽默型、严格型</li>
+                <li data-lang="zh"><strong>零食热点地图</strong> — 地理位置热力图，哪里吃得最多</li>
+                <li data-lang="zh"><strong>天气动态 UI</strong> — 基于实时天气的雨雪极光效果</li>
+                <li data-lang="zh"><strong>7 种氛围主题</strong> — 星光、萤火虫、樱花、流星、极光、气泡、黑客帝国</li>
+                <li data-lang="zh"><strong>4 种桌面小组件</strong> — 主屏和锁屏小组件，支持快捷操作</li>
+                <li data-lang="zh"><strong>33 种语言</strong> — 完整本地化，支持 App 内切换语言</li>
+                <li data-lang="zh"><strong>隐私至上</strong> — 无需账号、无追踪、无广告、无第三方 SDK</li>
+            </ul>
+        </section>
+
+        <!-- Technical Highlights -->
+        <section>
+            <h2 data-lang="en">Technical Highlights</h2>
+            <h2 data-lang="zh">技术亮点</h2>
+            <ul class="feature-list">
+                <li data-lang="en"><strong>Bayesian Inference Engine</strong> — Dual-service detection (basic 6-signal weighted + advanced self-adaptive Bayesian fusion)</li>
+                <li data-lang="en"><strong>CoreMotion Pipeline</strong> — 10Hz accelerometer sampling, 12-feature extraction from 3-second windows, CoreML model with rule-based fallback</li>
+                <li data-lang="en"><strong>WatchConnectivity</strong> — Bidirectional iPhone ↔ Watch sync with offline-safe queued transport</li>
+                <li data-lang="en"><strong>Procedural Generation</strong> — 250 colors × 250 icons × 200 titles × 200 messages × 50 decorations = 125B+ unique celebrations</li>
+                <li data-lang="en"><strong>iCloud KV Sync</strong> — NSUbiquitousKeyValueStore with bidirectional merge and conflict resolution</li>
+                <li data-lang="en"><strong>JSON-Driven Localization</strong> — Custom runtime localization system supporting 33 languages without Xcode .strings</li>
+
+                <li data-lang="zh"><strong>贝叶斯推理引擎</strong> — 双重检测服务（基础 6 信号加权 + 高级自适应贝叶斯融合）</li>
+                <li data-lang="zh"><strong>CoreMotion 管线</strong> — 10Hz 加速度计采样、3 秒窗口 12 特征提取、CoreML 模型 + 规则回退</li>
+                <li data-lang="zh"><strong>WatchConnectivity</strong> — iPhone ↔ Watch 双向同步，离线安全排队传输</li>
+                <li data-lang="zh"><strong>程序化生成</strong> — 250 色 × 250 图标 × 200 标题 × 200 消息 × 50 装饰 = 1250 亿+ 种庆祝组合</li>
+                <li data-lang="zh"><strong>iCloud KV 同步</strong> — NSUbiquitousKeyValueStore 双向合并与冲突解决</li>
+                <li data-lang="zh"><strong>JSON 驱动本地化</strong> — 自研运行时本地化系统，支持 33 语言，不依赖 Xcode .strings</li>
+            </ul>
+        </section>
+
+        <!-- App Store Link -->
+        <section style="text-align: center;">
+            <h2 data-lang="en">Download</h2>
+            <h2 data-lang="zh">下载</h2>
+            <p data-lang="en" style="margin-bottom: 8px;">Available on the App Store for iPhone and Apple Watch.</p>
+            <p data-lang="zh" style="margin-bottom: 8px;">已在 App Store 上架，支持 iPhone 和 Apple Watch。</p>
+            <a href="https://apps.apple.com/app/snackguard/id6759090954" class="badge">App Store</a>
+        </section>
+
+        <!-- Contact -->
+        <section>
+            <h2 data-lang="en">Contact</h2>
+            <h2 data-lang="zh">联系方式</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3 data-lang="en">Developer</h3>
+                    <h3 data-lang="zh">开发者</h3>
+                    <p>Runcong Wan</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Email</h3>
+                    <p><a href="mailto:douglaswan.dev@gmail.com">douglaswan.dev@gmail.com</a></p>
+                </div>
+                <div class="contact-card">
+                    <h3 data-lang="en">Website</h3>
+                    <h3 data-lang="zh">官网</h3>
+                    <p><a href="https://goldenmonstew.github.io/snackguard-site/">goldenmonstew.github.io/snackguard-site</a></p>
+                </div>
+                <div class="contact-card">
+                    <h3>App Store</h3>
+                    <p><a href="https://apps.apple.com/app/snackguard/id6759090954">App ID: 6759090954</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <a href="index.html" data-lang="en">← Back to Homepage</a>
+        <a href="index.html" data-lang="zh">← 返回首页</a>
+        <p style="margin-top: 12px;">&copy; 2026 SnackGuard. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('[data-lang]').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('[data-lang="' + lang + '"]').forEach(el => el.classList.add('active'));
+            document.querySelectorAll('.lang-toggle button').forEach(b => b.classList.remove('active'));
+            document.getElementById('btn-' + lang).classList.add('active');
+            localStorage.setItem('pk-lang', lang);
+        }
+        function copyText(btn) {
+            const text = btn.parentElement.querySelector('p').textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                btn.textContent = 'Copied!';
+                setTimeout(() => btn.textContent = btn.closest('[data-lang="zh"]') ? '复制' : 'Copy', 1500);
+            });
+        }
+        (function() {
+            var saved = localStorage.getItem('pk-lang');
+            if (saved) { switchLang(saved); return; }
+            var b = (navigator.language || '').toLowerCase();
+            switchLang(b.startsWith('zh') ? 'zh' : 'en');
+        })();
+    </script>
+</body>
+</html>
