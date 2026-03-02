@@ -51,9 +51,9 @@
         .glass h2{font-size:13px;text-transform:uppercase;letter-spacing:0.15em;color:#0DF259;margin-bottom:20px;font-weight:600}
 
         /* Copy block */
-        .copy-block{background:rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:20px;margin:12px 0;position:relative}
+        .copy-block{background:rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:20px;padding-top:48px;margin:12px 0;position:relative}
         .copy-block p{font-size:14px;color:rgba(255,255,255,0.7);white-space:pre-wrap;line-height:1.8}
-        .copy-btn{position:absolute;top:12px;right:12px;padding:6px 14px;border:1px solid rgba(13,242,89,0.3);border-radius:8px;background:rgba(13,242,89,0.1);color:#0DF259;cursor:pointer;font-size:11px;transition:all .2s;text-transform:uppercase;letter-spacing:0.05em}
+        .copy-btn{position:absolute;top:12px;right:12px;padding:6px 14px;border:1px solid rgba(13,242,89,0.3);border-radius:8px;background:rgba(13,242,89,0.1);color:#0DF259;cursor:pointer;font-size:11px;transition:all .2s;text-transform:uppercase;letter-spacing:0.05em;z-index:2}
         .copy-btn:hover{background:rgba(13,242,89,0.25);border-color:#0DF259}
 
         /* Feature grid */
@@ -73,10 +73,10 @@
 
         /* Contact grid */
         .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:8px}
-        .contact-card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);border-radius:12px;padding:20px;text-align:center}
+        .contact-card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);border-radius:12px;padding:20px;text-align:center;overflow:hidden}
         .contact-card .c-label{font-size:11px;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.3);margin-bottom:6px}
-        .contact-card .c-value{font-size:14px;color:#fff;font-weight:500}
-        .contact-card a{color:#0DF259;text-decoration:none;transition:color .2s}
+        .contact-card .c-value{font-size:14px;color:#fff;font-weight:500;overflow-wrap:break-word;word-break:break-all}
+        .contact-card a{color:#0DF259;text-decoration:none;transition:color .2s;overflow-wrap:break-word;word-break:break-all}
         .contact-card a:hover{color:#5ffa8f}
 
         /* Download CTA */
